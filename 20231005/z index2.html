@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <img src="../resources/여우.jpg"width="200" height="200"/>
+    <p>img 요소의 z-index가 -1 이므로 다른요소의 뒤에 위치한다.</p>
+</div>
+<div id="opacity"></div>
+
+    <head>
+        <style>
+            img{position:absolute;left:0px ; top: 0px;z-index:-1 ;
+            opacity: 0.3;}
+            #opacity{
+                width: 500px;
+                height: 300px;
+                background-color: aquamarine;
+            }
+  </style>
+    </head>
+</body>
+</html>

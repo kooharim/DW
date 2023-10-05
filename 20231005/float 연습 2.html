@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 테스트</title>
+</head>
+<body>
+    <style>
+        .inner{
+            border: 1px solid black; 
+            width: 100px; 
+            height: 100px;  }
+        .left{ float: left;}
+        .right{float:right ; }
+        .red {background-color: red;}
+        .green{background-color: green;}
+        .blue{background-color: blue;}
+        .yellow{background-color: yellow;}
+    </style>
+    <div class="inner red left">1박스</div>
+    <div class="inner green left">2박스</div>
+    <div class="inner blue left"style="clear: both">3박스</div>
+    <div class="inner yellow left">4박스</div>
+
+    <div class="inner red right">1박스</div>
+    <div class="inner green right">2박스</div>
+    <div class="inner blue right" style="clear: both">3박스</div>
+    <div class="inner yellow right">4박스</div>
+</body>
+</html>

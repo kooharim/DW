@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box1{
+        position:absolute ;
+        top: 0px;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        background:tan ;
+        z-index:200;
+    }
+    #box2{
+        position:absolute ;
+        top: 30px;
+        left: 30px;
+        width: 100px;
+        height: 100px;
+        background: cadetblue;
+        z-index:100;
+    }
+    #box3{
+        position:absolute;
+        top: 60px;
+        left: 60px;
+        width: 100px;
+        height: 100px;
+        background: aqua;
+        z-index:0;
+    }
+</style>
+<body>
+    <div id="box1"> box #1</div>
+    <div id="box2"> box #2</div>
+    <div id="box3"> box #3</div>
+</body>
+</html>
