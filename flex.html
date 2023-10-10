@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing:border-box ;
+    }
+    body{ 
+        margin: 0;
+
+    }
+ul{
+    display: flex;
+    list-style-type: none;
+    /* flex-direction: row; */
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    padding: 0;
+}
+
+#container{
+    background-color: aqua;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+}
+#container> div{
+    width: 50px;
+    height:50px ;
+    background-color: beige;
+    margin:5px ;
+    padding: 5px;
+    flex-wrap: wrap;
+
+}
+</style>
+<body>
+    <ul>
+        <li>거북이</li>
+        <li>토끼</li>
+        <li> 양 </li>
+        <li>원숭이</li>
+        <li> 뱀</li>
+    </ul>
+    <div id="container">
+        플랙스 뭐시기
+        <!-- <div>flex</div> -->
+        <!-- <div>flex</div> -->
+        <!-- <div>flex</div> -->
+        <!-- <div>flex</div> -->
+        <!-- <div>flex</div> -->
+        <!-- <div>flex</div> -->
+        <!-- <div>flex</div> -->
+        <!-- <div>flex</div> -->
+        <!-- <div>flex</div> -->
+        <!-- <div>flex</div> -->
+
+    </div>
+</body>
+</html>
