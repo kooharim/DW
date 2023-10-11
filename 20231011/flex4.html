@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 2</title>
+</head>
+<style>
+*{
+    box-sizing:border-box ;
+}
+body{ 
+    margin: 0;
+
+}
+
+ul{
+display: flex;
+list-style-type: none;
+ border: 5px solid red;
+padding: 0;
+font-size:48px ;
+height: 500px;
+}
+
+li{
+    background-color: cornflowerblue;
+}
+   
+    li:nth-child(2n) {
+        background-color:slateblue;
+    }
+    li:nth-child(2) {
+       /* flex-grow: 1;
+       flex-shrink: 2; */
+    flex: 1 2 200px;
+    }
+     /* li:nth-child(3) {
+       flex-grow:2;
+    flex-shrink:3;
+} */
+   li:nth-child(1){order: 5;}
+   li:nth-child(2){order: 4;}
+   li:nth-child(3){order: 3;}
+   li:nth-child(4){order: 2;}
+   li:nth-child(5){order: 1;}
+</style>
+
+<body>
+    <ul>
+        <li>거북이</li>
+        <li>토끼</li>
+        <li> 양 </li>
+        <li>원숭이</li>
+        <li> 뱀</li>
+    </ul>
+</body>
+</html>
