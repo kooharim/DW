@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이어웃 - 그리드 연습</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1.5fr 5fr 1fr;
+      gap:10px ;
+    }
+    #header {
+      background-color: #ffff00;
+      display:flex ;
+      flex-direction: column;
+      justify-content: center; 
+       align-items: center; 
+
+    }
+    #content {
+      /* background-color: antiquewhite; */
+      display: grid;
+      grid-template-columns:1fr 3fr;
+      gap: 10px;
+    
+    }
+    #nav{
+        background-color: #e69999;
+        font-size: 30px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    #main{
+         background-color:#99e6e6;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    #section1{ 
+         background-color:beige ;
+
+     } 
+     #section2{ 
+     background-color:beige; 
+     }
+    #footer {
+     background-color: #9999e6;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 30px;
+    }
+    div{
+        border-radius: 60px;
+    }
+    .section{
+        margin: 20px;
+        background-color:#9ed7c2 ;
+        border-style:dotted ;
+        padding-left: 3%;
+        padding-right:3% ;
+        font-size:20px ;
+    }
+    a{
+        color:yellow;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>my bolg page</h1>
+        <p>div와 grid로 만들어진 페이지 입니다.</p>
+      </div>
+      <div id="content">
+      <div id="nav">
+        <h3>links</h3>
+        <ul>
+            <li> <a href="https://www.w3shools.com" target="_blank">W3CSchools</a></li>
+            <li> <a href="https://www.naver.com" target="_blank"style="color: #ffff00;">naver</a></li>
+            <li> <a href="https://www.google.com" target="_blank"style="color: #ffff00;">google</a></li>
+    </ul>
+<img src="../resources/여우.jpg">
+      </div>
+      <div id="main">
+    <div id="section1" class="section">
+        <h3>semantic Tags</h3>
+        <p>
+          시맨틱 요소 (semantic elements)들은 브라우저에게 요소의 의미나 
+          목적을 명확하게 알려주는 요소이다.레이아웃을 만들때 쓰는 것, 의미가 있는
+          요소라면 div보다는 시맨틱 태그를 사용해준다.
+        </p>
+    </div>
+      <div id="section2" class="section">
+        <h3>div와 Span</h3>
+        <p>
+       div는"divde"의 약자로서 메이지를 논리적인 세션으로 분리하는데 
+       사용되는 태그이다. span 요소는 인라인 요소로서 텍스트를 위한 
+       컨테이너로 사용할 수 있다. 
+    </p>
+      </div>
+      </div>
+      </div>
+      <div id="footer">
+        <p>copyright (c) 2023 koo</p>
+      </div>
+    </div>
+    
+  </body>
+</html>
