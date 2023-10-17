@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그리드 연습 2</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1fr 1fr 2fr 1fr;
+    }
+
+    #header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+    #header {
+      background-color: cornflowerblue;
+    }
+    #nav {
+      background-color: darkseagreen;
+    }
+
+    #th {
+      background-color: rgb(153, 152, 230);
+      display: grid;
+      grid-template-columns: 2fr 4fr 2fr;
+   
+    }
+    #article {
+      background-color: olive;
+    }
+    #aside {
+      background-color: palevioletred;
+    }
+
+    #footer {
+      background-color: palegoldenrod;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header">header</div>
+
+      <div id="nav">nav</div>
+      <div id="th">
+        <div id="aside">aside left</div>
+        <div id="article">article</div>
+        <div id="aside1">aside right</div>
+      </div>
+      <div id="footer">footer</div>
+    </div>
+  </body>
+</html>
