@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이어웃 - 그리드 연습</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1.5fr 5fr 1fr;
+      gap:10px ;
+    }
+    #header {
+      background-color: #ffff00;
+      display:flex ;
+      flex-direction: column;
+      justify-content: center; 
+       align-items: center; 
+
+    }
+    #content {
+      /* background-color: antiquewhite; */
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    }
+    #nav{
+        background-color: #e69999;
+        font-size: 30px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    #main{
+         background-color:#99e6e6;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    #section1{ 
+         background-color:beige ;
+
+     } 
+     #section2{ 
+     background-color:beige; 
+     }
+    #footer {
+     background-color: #9999e6;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 30px;
+    }
+    div{
+        border-radius: 10px;
+    }
+   
+   
+   
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        </div>
+      <div id="content">
+      <div id="nav"></div>
+      <div id="main">
+    
+      </div>
+      </div>
+      <div id="footer">
+       </div>
+    </div>
+  </body>
+</html>
