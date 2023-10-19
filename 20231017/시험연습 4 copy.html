@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시험연습 4</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+
+    #wrapper {
+      background-color: aquamarine;
+      display: grid;
+      grid-template-rows: 1fr 1fr 3fr 1fr;
+    }
+    #header1 {
+      background-color: cadetblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: purple;
+      font-size: 50PX;
+    }
+    #header2 {
+      background-color: cornflowerblue;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0;
+      font-weight: 500;
+      align-items: center;
+    }
+    li a {
+      color: inherit;
+      text-decoration: none;
+    }
+    li {
+      color: white;
+    }
+    #content {
+      background-color: mediumpurple;
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+    .aside1{
+        background-color: cadetblue;
+
+    }
+    .aside2{
+        color: inherit;
+
+    }
+    #category {
+      background-color: #e6b3b3;
+      list-style-type: none;
+      padding: 0;
+    }
+    #category li {
+      padding: 3% 8%;
+      border-bottom: 1px solid #d1a3a3;
+    }
+    #category li:nth-child(1) {
+      border-top: 1px solid #d1a3a3;
+    }
+
+    #nav1 {
+      background-color: darkcyan;
+    }
+    #main{
+        background-color: chartreuse;
+    }
+    #nav2 {
+      background-color: beige;
+    }
+    #footer {
+      background-color: khaki;
+    }
+    div#header1 > div {
+      display: flex;
+      width: 30px;
+      align-items: center;
+    }
+    div#header1 > div > img {
+      width: inherit;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header1">
+        <img src="../resources/여우.jpg" />
+        <span>Web shopping</span>
+      </div>
+      <ul id="header2">
+        <li><a href="#">home</a></li>
+        <li><a href="#">shopping</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">my ACCOUNT</a></li>
+        <li><a href="#">CONTACTS</a></li>
+      </ul>
+      <div id="content">
+         <div id="aside1" class="aside">
+         <span>카테고리</span>
+         <ul id="category">
+            <li><a href="#">컴퓨터></a></li>
+            <li><a href="#">의류</a></li>
+            <li><a href="#">음악</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">스포츠/레저</a></li>
+            <li><a href="#">가구,인테리어</a></li>
+            <li><a href="#">식품</a></li>
+         </ul>
+        <div id="nav1"></div>
+        <div id="main"></div>
+        <div id="nav2">
+           </div>
+           
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

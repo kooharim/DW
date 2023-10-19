@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transition</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: darkolivegreen;
+      
+      transition-property:all;
+      transition-duration:2s;
+      /* transition-delay: 2s; */
+      /* transition-timing-function:linear ; */
+      /* transition-timing-function:ease-in ; */
+      /* transition-timing-function:ease-out ; */
+      /* transition-timing-function:ease-in-out ; */
+        transition:all 2s linear ;
+    }
+    .rotate45:hover {
+      /* transform:rotate(45deg); */
+       /* transition-property: ; */
+      /* transform: rotateY(180deg); */
+      transform: rotate(180deg);
+      transform-origin:100% 100 0;
+    }
+    .scaletest:hover {
+      /* transform: scale(1.5,2); */
+      /* transform: scale(0.7,0.7); */
+      /* transform: scaleX(2); */
+      transform: scaleY(2);
+      transform-origin:100% 0;
+    }
+    
+    .skewtest:hover {
+     transform: skew(45deg,45deg);
+      /* transform: skewX(45deg); */
+      /* transform: skewY(45deg); */
+      transform-origin:100% 0;
+    }
+    
+    .translatetest:hover {
+      /* transform: translate(400px,400px); */
+      transform: translateX(400px);
+      transform-origin:100% 0;
+    }
+    
+    .matrixtest:hover {
+      /* matrix(scaleX(), skewY()skewX(), scleY(),scleX(),translateX()translateY()); */
+      transform: matrix(2, 0, 0, 2, 200, 200);
+      transform-origin:100% 0;
+    }
+
+  </style>
+  <body>
+    <h1>Transition test</h1>
+    <h3>transition-poroperty, transition-delay</h3>
+    <div class="rotate45">rotate(45deg)</div>
+
+    <h3>scale</h3>
+    <div class="scaletest">scale</div>
+
+    <h3>skew</h3>
+    <div class="skewtest">skew</div>
+
+    <h3>matrix</h3>
+    <div class="matrixtest">matrix</div>
+
+    <h3>translate</h3>
+    <div class="translatetest">translate</div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /> <br /> <br /><br /><br /><br/><br><br/>
+     <br /><br /> <br /> <br /><br />
+  </body>
+</html>
