@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 0;
+    }
+    html,body,#wrapper{
+        width: 100%;
+        height: 100%;
+    }
+
+    #wrapper{
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+    #header{
+        background-color:lightseagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        
+            }
+
+            #box{
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                
+
+            }
+            #하{
+                color: lightgoldenrodyellow;
+            }
+    #nav{
+        background-color: burlywood;
+        
+        }
+    #content{
+        background-color: darkgreen;
+
+
+    }
+    #footer{
+        background-color:lightcoral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+
+    }
+
+</style>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <img src="../resource/탕후루.jpg" width="100px" height="100px"> 
+            <h2>탕후루 주문</h2>
+
+        </div>
+            <div id="box">
+        <div id="nav">
+            고객명:<input type="name" placeholder="으뉴 공주"><br> 
+            전화번호:<input type="tel" placeholder="010-1234-1234"><br>
+            Emali:<input type="email" placeholder="ooooooooo@naver.com">
+            
+            희망배송시간 <input type="time">
+            <p>배송시 요청사항:</p>
+            <iframe src="" width="300" height="120"></iframe> <br><br>
+
+    <button>주문하기</button>
+    <button>다시 선택하기</button>
+        </div>
+        <div id="content">
+            <fieldset id="하">
+                <legend id="호">탕후루 과일 종류</legend>
+                <input type="radio">
+                <label for="딸기">딸기</label><br><br>
+                <input type="radio">
+                <label for="통귤">통귤</label><br><br>
+                <input type="radio">
+                <label for="사파이어 포도"> 사파이어 포도 </label><br><br>
+                <input type="radio">
+                <label for="거봉"> 거봉 </label><br><br>
+                <img src="../resource/통귤 탕후루.jpg" width="20%" height="20%">
+                 </div>
+            </div>
+        <div id="footer">
+            <h2>오늘의 일기 처음 먹어 본 통귤 탕후루가 맛있었다.</h2>
+        </div>
+    
+    </div>
+</body>
+</html>
