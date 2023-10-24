@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      html,
+      body,
+      #wrapper {
+        width: 100%;
+        height: 100%;
+      }
+      #wrapper {
+        /* background-color: aqua; */
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+      }
+      #header {
+        background-color: lemonchiffon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-radius: 50%;
+      }
+      #box {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+      }
+      #nav {
+        background-color: lightblue;
+      }
+      #category {
+        background-color: lightslategray;
+        list-style-type: none;
+        padding: 0;
+      }
+      #category li {
+        padding: 8% 8%;
+        border-bottom: 1px solid lightblue;
+      }
+      #category li:nth-child(1) {
+        border-top: 1px solid lightblue;
+      }
+      li {
+        color: white;
+        font-weight: 500;
+      }
+      li a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .aside {
+        background-color: lightblue;
+
+        padding: 15% 8%;
+      }
+
+      #na {
+        background-color: lavenderblush;
+      }
+      #content {
+        background-color: pink;
+      }
+      #footer {
+        background-color: lemonchiffon;
+      }
+    </style>
+  </body>
+  <div id="wrapper">
+    <div id="header">
+      <img src="../resource/치즈.jpg" width="80px" height="80px" />
+      <span>CHEESE QUEEN</span>
+      <img src="../resource/치즈.jpg" width="80px" height="80px" />
+    </div>
+    <div id="box">
+      <div id="nav">
+        <div id="aside1" class="aside">
+          <h3>카테고리</h3>
+          <ul id="category">
+            <li><a href="#">모짜렐라</a></li>
+            <li><a href="#">자연치즈</a></li>
+            <li><a href="#">가공치즈</a></li>
+            <li><a href="#">크림치즈</a></li>
+            <li><a href="#"> 하몽/ 살라미</a></li>
+            <li><a href="#">치즈 도구 </a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="na">na</div>
+      <div id="content" class="box2">
+        <h2>shopping cart</h2>
+        <p>현재 쇼핑카트에 물품이 없습니다.</p>
+        <a href="#"> 쇼핑카트 보기</a>
+        <br /><br />
+        <h3>Log in</h3>
+        <span>아이디</span>
+        <p><input type="text" style="width: 100%" /></p>
+        <span>패스워드</span>
+        <p><input type="text" style="width: 100%" /></p>
+        <button>로그인</button>
+        <button>회원가입</button>
+        <br />
+        <a href="#">회원가입</a>
+        <a href="#">비밀번호 분실</a>
+      </div>
+    </div>
+    <div id="footer">footer</div>
+  </div>
+</html>

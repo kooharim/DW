@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+    let mame = "홍길동";
+    let age = 20;
+    let grender ="male";
+    let address = "대전광역시 중구 선화동";
+    
+    let mame2 = "임꺽정";
+    let age2= 21;
+    let grender2 ="male";
+    let address2 = "대전광역시 중구 선화동";
+
+    // 객체 선언 방법
+    let person1 = {};
+    let person2 = new Object();  //잘 안씀
+   
+    // 객채 생성 후 프로퍼티 추가 방법1
+    person1.name = '홍길동';
+    person1.age = 20;
+    person1.gender = 'male';
+    person1.address = '대전광역시 중구 선화동';
+    console.log(person1);
+    // console.log(person1.age);
+
+    // 객체 생성 후 프로퍼티 추가 방법 2
+
+    person2["name"] = "임꺽정";
+    person2["age"] = "21";
+    person2["grender"] = "male";
+    person2["address"] = "대전광역시 중구 선화동 ";
+    console.log(person2);
+   
+
+    // 객체 선언과 동시에 프로퍼티를 추가하는 방법 / 끝에 반드시 "," 를 붙혀줘야됨
+     let person3 ={
+        name: "그로밋",
+        age: 30,
+        gender: "male",
+        address:"영국 북서부 위건",
+        chlid:person1,
+     };
+     console.log(person3);
+
+     // 객체의 속성(프로퍼티) 겂울 가져오는 방법 1 
+     console.log(person3.age);
+     console.log(person3.chlid.name);
+          // 객체의 속성(프로퍼티) 겂울 가져오는 방법 2
+    console.log(person3["name"]);
+    // 저의 이름은 name이고 성별은 gender입니다. 그리고 주소는 address입니다.
+   
+    console.log(person3["name"]);
+    console.log(person3["age"]);
+    console.log(person3["gender"]);
+    console.log(person3["address"]);
+    console.log(person3);
+    
+    `저의 이름은 ${person3.name}이고 나이는 ${person3.age}이며,
+  성별은 ${person3.gender}입니다. 그리고 주소는${person3.adderss} 입니다.`
+   
+</script>
+</html>

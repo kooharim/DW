@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     *{
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+   }
+   #Wrap{
+       width:200px ;
+       height:200px ;
+       margin: 100px auto; 
+       position: relative;
+       perspective:400px;
+    }
+    #Wrap .card {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* transition: all 3s linear; */
+      animation: rotatecube 3s infinite linear;
+      transform-style: preserve-3d;
+    }
+    #Wrap .card > div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 3px solid white;
+      box-shadow: 0px 0px 40px 5px greenyellow;
+    }
+    #Wrap .card > div:nth-child(1) {
+      background-color:lawngreen;
+      transform: translateZ(100px);
+    }
+    #Wrap .card > div:nth-child(2) {
+      background-color:lightblue;
+      transform: translateX(-100px) rotateY(-90deg);
+    }
+    #Wrap .card > div:nth-child(3) {
+      background-color: lightseagreen;
+      transform: translateX(100px) rotateY(90deg);
+    }
+    #Wrap .card > div:nth-child(4) {
+      background-color: purple;
+      transform: translateZ(-100px) rotateZ(180deg);
+    }
+    #Wrap .card > div:nth-child(5) {
+      background-color: lightslategrey;
+      transform: translateY(-100px) rotateX(-90deg);
+    }
+    #Wrap .card > div:nth-child(6) {
+      background-color: darkslateblue;
+      transform: translateY(100px) rotateX(90deg);
+      
+    }
+    @keyframes rotatecube {
+      from {
+        transform: rotateX(0deg) rotateY(-200px) rotateZ(0deg);
+      }
+      to {
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+</style>
+<body>
+    <div id="Wrap">
+        <div class="card">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+    </div>
+    </div>
+</body>
+</html>
