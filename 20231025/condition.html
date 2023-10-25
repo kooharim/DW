@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condition</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //if문
+    // if(조건식){
+    //     조건식이 참일 경우 실행 할 코드
+    // }
+
+    // if(3 > 5){
+    // alert("true 입니다.");
+    // }
+    const x= 5;
+    const y= 3;
+    const z= 10;
+        
+    if (x < y){
+        alert("x는y보다 큽니다.");
+        } else if (y > z){
+            alert("y는 z 보다 작습니다.");
+        } else if (x > z){
+            alert("x는 z보다 작습니다.");
+        } else{
+            alert("위 조건을 모두 만족하지 못했습니다.");
+        }
+        // 1. 사용자에게 점수를 입력 받는다.
+        
+        // prompt() 함수 사용 => 받은 결과 값을 숫자로 변환
+        // const num = prompt();
+        
+        // 2.  입력받은 점수별로 
+        // 0~59 : F  if(0 <= num && num <= 59) {}
+        // 60~69:D
+        // 70~79:C
+        // 80~89:B
+        // 90~100:A
+        const num =prompt ("점수를 입력하세요","0~100 사이의 점수");
+        if (0 <= num && num <= 59){
+           alert ("F");}
+             else if (60 <= num && num <= 69){
+             alert ("D");
+            }
+             else if (70 <= num && num <= 79){
+             alert ("C");
+            }
+             else if (80 <= num && num <= 89){
+           
+            alert ("B");
+                 }
+          else {
+           alert ("A");
+              }
+    
+       
+    
+    
+
+
+
+        //   다시 첫번째가 됨 
+            // if (x < z){
+            //     alert("y 는 z 보다 작습니다.");
+            // }
+            
+
+</script>
+</html>
