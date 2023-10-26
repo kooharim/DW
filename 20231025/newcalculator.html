@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>newcalcuator</title>
-</head>
-<body>
-    
-</body>
-<script>
+  </head>
+  <body></body>
+  <script>
     // 1. 첫번째 prompt를 띄우고 숫자를 입력 받는다.
+    const num1 = +prompt("숫자를 입력하세요.");
     // 2. 두번째  prompt를 띄우고 두번째 연산자를 입력 받는다.
+    const operator = prompt("연산자를 입력하세요.", "+,-,*.%");
     // (+,-,*,/,%)
     // 3. 세번째 prompt를 띄우고 두번째 숫자를 입력 받는다.
+    const num2 = +prompt("숫자를 입력하세요.");
     // 4. 입력받은 연산자가 어떤 연산자 인지 조건문으로 확인 후
     // 첫번째 숫자와 두번째 숫자를 계산한다.
-        // ( 연산자 == "+")
-    //5. 화면상에 계산된 두개의 숫자와 연산자, 그리고 결과 값이 출력되게 한다. 
+    let result = 0;
+    if (operator == "+") {
+      result = num1 + num2;
+    } else if (operator == "-") {
+      result = num1 - num2;
+    } else if (operator == "*") {
+      result = num1 * num2;
+    } else if (operator == "/") {
+      result = num1 / num2;
+    } else if (operator == "%") {
+      result = num1 % num2;
+    } else { 
+        alert(" 연산자를 잘못 입력했음");
+        location.reload();
+    }
 
+    // ( 연산자 == "+")
+    //5. 화면상에 계산된 두개의 숫자와 연산자, 그리고 결과 값이 출력되게 한다.
+    document.write(`<h1>${num1} ${operator} ${num2} = ${result}</h1> `);
 
-// 1.
-    const num = prompt ("숫자를 입력하세요.", "첫번째의 숫자");
-   if 
-</html> 
+    // 1.
+  </script>
+</html>
