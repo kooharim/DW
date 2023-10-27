@@ -23,11 +23,26 @@
     ></script>
   </head>
   <body>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <header>
       <div class="container">
         <h1>
           <a href="index.html">
-            <img src="../20231026_han/logo.jpg" alt="DW 종합병원 로고" />
+            <img src="../하림병원 로고.png" alt="하림병원 로고" />
           </a>
         </h1>
 
@@ -36,7 +51,7 @@
             <ul>
               <li class="gnb_main">
                 <a href="#">
-                  <i class="fas fa-globe"></i>Language 
+                  <i class="fas fa-globe"></i>Language
                   <i class="fas fa-caret-dowm"></i>
                 </a>
                 <ul class="gnb_sub">
@@ -56,38 +71,48 @@
             </ul>
           </nav>
           <nav id="lnb">
+            <div id="panel"></div>
             <ul>
               <li class="main">
-                <a href=""></a>
-                  <ul class="sub">
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                  </ul>
+                <a href="">진료안내</a>
+                <ul class="sub">
+                  <li><a href="">외래진료안내</a></li>
+                  <li><a href="">입/ 퇴원 안내</a></li>
+                  <li><a href="">클리닉</a></li>
+                  <li><a href="">전문센터</a></li>
+                  <li><a href="">의약품 정보</a></li>
+                  <li><a href=" ">건강정보</a></li>
+                  <li><a href=" ">진료지원</a></li>
+                </ul>
               </li>
               <li class="main">
-                  <a href=""></a>
-                    <ul class="sub">
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                  </ul>
+                <a href="">진료예약</a>
+                <ul class="sub">
+                  <li><a href="">진료예약</a></li>
+                  <li><a href="">예약확인</a></li>
+                  <li><a href="">증명서발급</a></li>
+                  <li><a href="">종합검진예악</a></li>
+                  <li><a href="">비급여진료비</a></li>
+                </ul>
               </li>
               <li class="main">
-                  <a href=""></a>
-                    <ul class="sub">
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                  </ul>
+                <a href="">이용안내</a>
+                <ul class="sub">
+                  <li><a href="">주차안내</a></li>
+                  <li><a href="">편의시설</a></li>
+                  <li><a href="">장례식장</a></li>
+                  <li><a href="">집 가기</a></li>
+                </ul>
               </li>
               <li class="main">
-                  <a href=""></a>
-                    <ul class="sub">
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                  </ul>
+                <a href="">병원소개</a>
+                <ul class="sub">
+                  <li><a href="">병원소개</a></li>
+                  <li><a href="">병원소식</a></li>
+                  <li><a href="">홍보 동영상</a></li>
+                  <li><a href="">연혁</a></li>
+                  <li><a href="">서비스 헌장</a></li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -95,8 +120,65 @@
       </div>
     </header>
 
-  <main></main>
+    <main>
+      <div class="container">
+        <div id="slider">
+          <div><img src="../20231025_ han/images/그로밋 1.jpg" art="슬라이더 이미지"/></div>
+          <div><img src="../20231025_ han/images/그로밋 2.jpg" art="슬라이더 이미지"/></div>
+          <div><img src="../20231025_ han/images/그로밋 3.jpg" art="슬라이더 이미지"/></div>
+          <div><img src="../20231025_ han/images/그로밋 4.png" art="슬라이더 이미지"/></div>
+          <div><img src="../20231025_ han/images/그로밋 5.jpg" art="슬라이더 이미지"/></div>
+        </div>
+        <script>
+          $("#slider").slick({
+            autoplay:true,
+            autoplayspeed:1000,
+            slidesToShow:2,
+            slidesToScroll:2,
+          });
+        </script>
+      </div>
+    </main>
 
-    <footer></footer>
+    <footer>
+      <div id="footer_top">
+        <div class="container">
+          <a href="#">비급여진료비</a>
+          <a href="#">환자관리정전</a>
+          <a href="#">고객현장</a>
+          <a href="#">정보공개</a>
+          <a href="#">청렴센터</a>
+          <a href="#">청렴도축정결과동개</a>
+        </div>
+      </div>
+      <div id="footer_bottom">
+        <div class="container">
+          <div id="footer_bottom_left">
+            <div>
+              <a href="#">웹이용약관</a>
+              <a href="#" class="yellow">개인정보처리방침</a>
+              <a href="#">이메일무단수집거부</a>
+              <a href="#">고객의소리</a>
+            </div>
+
+            <div>
+              <p>
+                대표전화 : 1599-7123 말로거는전화 : 1636 +
+                "하림대학교병원"이라고 말하세요!
+              </p>
+              <p>
+                (35015)대전광역시 중구 문화로 282 하림대학교병원 사업자번호 :
+                305-82-08811
+              </p>
+              <p>
+                COPYRIGHT BY CHUNGNAM NATIONAL UNIVERSITY HOSPITAL ALL RIGHTS
+                RESERVED
+              </p>
+            </div>
+          </div>
+          <div id="footer_bottom_right"></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
