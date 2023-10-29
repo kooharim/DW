@@ -38,6 +38,7 @@
       }
       #nav {
         background-color: lightblue;
+    
       }
       #category {
         background-color: lightslategray;
@@ -67,12 +68,27 @@
 
       #na {
         background-color: lavenderblush;
-      }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1%;
+        padding: 3%;
+       }
+      .item {
+      display: grid;
+      grid-template-rows: 5fr 4fr 1fr;
+      gap: 1%;
+      border: 1px solid #e5e5e5;
+      padding: 5%;
+    }
+
       #content {
         background-color: pink;
       }
       #footer {
         background-color: lemonchiffon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </body>
@@ -96,7 +112,26 @@
           </ul>
         </div>
       </div>
-      <div id="na">na</div>
+      
+
+        <div id="na" class="aside">
+          <div id="item1" class="item">
+          <img src="../resource/브라운 치즈.jpg" width="90%" height="90%" />
+           <p>브라운 치즈 </p> 
+          <button>쇼핑카트에 추가하기</button>
+                </div>
+         <div id="item2" class="item">
+        <img src="../resource/지선 픽 그릭 요거트.jpg" width=" 90%" height="90%">
+            <p>지선'pick  그릭 요거트  </p>
+           
+       <button>쇼핑카트에 추가하기</button>
+                </div>
+        <div id="item3" class="item">
+        <img src="../resource/제리 슬라이스 치즈.jpg" width="90%" height="90%">
+              <p>슬라이스 제리 치즈</p>
+              <button> 쇼필카트에 추가하기</button>
+              </div>
+      </div>
       <div id="content" class="box2">
         <h2>shopping cart</h2>
         <p>현재 쇼핑카트에 물품이 없습니다.</p>
@@ -114,6 +149,9 @@
         <a href="#">비밀번호 분실</a>
       </div>
     </div>
-    <div id="footer">footer</div>
+    <div id="footer">
+      <h2>한고은 본인이 넣어달라 함</h2>
+      <img src="../resource/한고은.jpg" width="70px" height="70px">
+    </div>
   </div>
 </html>
