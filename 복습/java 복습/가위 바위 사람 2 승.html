@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+    let person1= prompt("가위,바위, 보 중 하나를 입력하세요.", "첫번째 사람 입력")
+    let person2= prompt("가위,바위, 보 중 하나를 입력하세요.", "두번째 사람 입력")
+    let result="";
+    if(person1=="가위" ){
+        if(person2=="가위" );
+     result="무승부";
+    }else if (person2== "바위"){
+        result= "두번째 사람 승"
+    } else {
+        result="두번째 사람 승"
+    } 
+
+    
+    if(person2=="바위" ){
+        if(person1=="바위" );
+        result="무승부";
+    }else if (person1== "가위"){
+        result= "두번째 사람 승"
+    } else {
+        result="두번째 사람 승"
+    } 
+    
+    if(person2=="보" ){
+        if(person1=="바위" );
+        result="두번째 사람 승 ";
+    }else if (person1== "가위"){
+        result= "두번째 사람 승"
+    } else {
+        result="무승부"
+    } 
+
+   document.write(`<h1> ${person1} ${person2} = ${result}</h1>`);
+    
+   
+</script>
+</html>

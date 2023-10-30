@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+    // 두개의 숫자를 입력 받으세요.
+    // 숫자를 계산할 연산자를 입력 받으세요.
+    // 입력받은 숫자와 계산할 연산자를 조건문으로 입력하여, 두개의 숫자를 계산 후 창을 띄 우세요.
+
+let num= prompt("첫번째 숫자를 입력하세요.");
+let ha = prompt("연산자를 입력하세요.", "+,-");
+let num1= prompt("두번째 숫자를 입력하세요.");
+let result="";
+if(ha =="+"){
+    result = num+num1;
+} else if ( ha=="-"){
+    result = num-num1;
+    }
+else {
+   alert ("다시 입력하세요."); 
+}
+    document.write(`${num} ${ha} ${num1}= ${result}`)
+
+</script>
+</html>
