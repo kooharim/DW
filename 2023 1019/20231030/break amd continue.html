@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+    let msg ="";
+    for(let i = 0; i < 10; i++){
+        if (i==3) {
+            break;
+        }
+        msg += i +"<br>";
+        // msg=msg +i + "<br>"
+        //  i== 0일때 "" + 0 + "<br>"==> "0<br>"
+        // i==1일때    "0<br>"+1 +"<br>" ==> "0<br>""1<br>"
+        // i==2 일때 "0<br>""1<br>"
+
+    }
+    document.write(msg);
+
+
+   document.write(`<hr>`);
+    msg ="";
+   for(let i = 0; i < 10; i++){
+        if (i==3) {
+        continue;
+        }
+    } msg +=i+"<br>";
+    document.write(msg);
+
+        let j=0
+        while(true){
+            document.write(`<h2> ${i}</h2>`)
+            j++
+            if (j==5){
+                break;
+            }
+           } 
+
+</script>
+</html>
