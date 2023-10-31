@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //별찍기
+    //*****
+    //*****
+    //*****
+    //*****
+    // for (let j = 1; j <= 5; j++) {
+    //   for (let i = 1; i <= 5; i++) {
+    //     document.write(`*`);
+    //   }
+    //   document.write(`<br>`);
+    // }
+
+    //별찍기
+    //*
+    //**
+    //***
+    //****
+    //*****
+
+    // for (let j = 1; j <= 1; j++) {
+    //   for (let i = 1; i <= 1; i++) {
+    //     document.write(`*`);
+    //     document.write(`<br>`);
+    //   }
+    // }
+    for (let j = 1; j <= 5; j++) {
+      for (let i = 1; i <= j; i++) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+
+    //별찍기
+    //    *
+    //   **
+    //  ***
+    // ****
+    //*****
+//공백 ==> 4,3,2,1
+    for (let i = 0; i < 5; i++) {
+      for (let j = 4; j > i; j--) {
+        document.write("&nbsp");
+      }
+      for (let j = 0; j <= i; j++) {
+        document.write("*");
+      }
+      document.write("<br>");
+    }
+
+    
+  </script>
+</html>

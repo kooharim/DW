@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      margin: 20px;
+      float: left;
+    }
+    table,
+    th {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      padding: 10px 15px;
+    }
+    th {
+      background-color: aliceblue;
+    }
+    td {
+      border: 1px dotted #222;
+    }
+  </style>
+  <body>
+    <h1>구구단</h1>
+  </body>
+  <script>
+    document.write(`
+         <table>
+             <tr><th>2단</th></tr>
+
+             <tr><td> 2 x 1= 1 </td></tr>
+             <tr><td> 2 x 2= 4 </td></tr>
+             <tr><td> 2 x 3= 6 </td></tr>
+             <tr><td> 2 x 4= 8 </td></tr>
+             <tr><td> 2 x 5= 10 </td></tr>
+             <tr><td> 2 x 6= 12 </td></tr>
+             <tr><td> 2 x 7= 14 </td></tr>
+            <tr><td> 2 x 8= 16 </td></tr>
+            <tr><td> 2 x 9= 18 </td></tr>
+        
+
+            </table>`);
+
+    // for (let i= 2; i <)
+    //  for (let i = 2; i <= 9; i++) {
+    //    for (let j = 1; j <= 9; j++) {
+    //      document.write(`<h1>${i}x ${j}= ${i * j}</h1>`);
+    //    }
+    //  }
+
+    // document.write("<table border=1 align=center cellpadding = 15>");
+    // document.write("<caption>구구단</caption>");
+    // //헤드(1행)
+    // document.write("<tr>");
+    // for(let dan = 2; dan <= 9; dan++) {
+    // 	document.write("<th>" + dan + "단</th>");
+    // }
+    // document.write("</tr>")	;
+
+    // //바디(2행)
+    // document.write("<tr>");
+    // for(let dan = 2; dan <= 9; dan++) {
+    // 	document.write("<td>")
+    // 	for(let i = 1; i <= 9; i ++) {
+    // 		document.write(dan + " x " + i + " = " + dan*i + "<br>");
+    // 	}
+    // 	document.write("</td>")
+    // }
+    // document.write("</tr>")	;
+    // //테이블끝
+    // document.write("</table>");
+
+    document.write(`
+        <table>
+            <tr><td> 2단 </td></tr>
+            <tr><td> 3단 </td></tr>
+            <tr><td> 4단 </td></tr>
+            <tr><td> 5단 </td></tr>
+            <tr><td> 6단 </td></tr>
+            <tr><td> 7단 </td></tr>
+            <tr><td> 8단 </td></tr>
+            <tr><td> 9단 </td></tr>
+            `);
+
+    for (let j = 2; j <= 9; j++) {
+        document.write(`<table>`);
+      document.write(`<tr><td> ${j}x ${i}=${i*j}</td></tr>`);
+    }
+   
+     document.write("</tr>");
+   document.write(`</table>`);
+
+
+
+
+  </script>
+</html>
