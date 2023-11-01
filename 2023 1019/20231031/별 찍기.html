@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,14 +38,14 @@
       }
       document.write(`<br>`);
     }
-
+    document.write(`<hr>`);
     //별찍기
     //    *
     //   **
     //  ***
     // ****
     //*****
-//공백 ==> 4,3,2,1
+    //공백 ==> 4,3,2,1
     for (let i = 0; i < 5; i++) {
       for (let j = 4; j > i; j--) {
         document.write("&nbsp");
@@ -56,6 +56,133 @@
       document.write("<br>");
     }
 
+    //*****
+    //****
+    //***
+    //**
+    //*
+    document.write(`<hr>`);
+    for (let j = 1; j <= 5; j++) {
+      for (let i = 5; i >= j; i--) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+
+    //*****
+    // ****
+    //  ***
+    //   **
+    //    *
+    document.write(`<hr>`);
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j < i; j++) {
+        document.write("&nbsp");
+      }
+      for (let K = 5; K > i; K--) {
+        document.write("*");
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+
+    //     *
+    //    ***
+    //   *****
+    //  *******
+    // *********
+
+    // for (let i = 0; i <= 5; i++) {
+    //   for (let j = 4; j >=i; j--) {      //12345
+    //     document.write("&nbsp");
+    //   }
+    //   for (let j = 0; j <= i; j++) {
+    //     document.write("*");
+    //     document.write("&nbsp");
+    //   }document.write("<br>");
+    // }
+
+    // 13579 트리모양 방법 1
+    for (let i = 0; i < 5; i++) {
+      for (let j = 4; j > i; j--) {
+        document.write("&nbsp");
+      }
+      for (let k = 0; k <= i; k++) {
+        document.write("*");
+      }
+      for (let z = 0; z < i; z++) {
+        document.write("*");
+      }
+      document.write(`<br>`);
+    }
+
+    document.write(`<hr>`);
+    // 트리모양 방법 2
+
+    for (let i = 0; i < 5; i++) {
+      for (let j = 4; j > i; j--) {
+        document.write("&nbsp");
+      }
+      for (let k = 1; k < 2 * i + 2; k++) {
+        document.write("*");
+      }
+      document.write(`<br>`);
+    }
+
+    // *********
+    //  *******
+    //   *****
+    //    ***
+    //     *
+
+    //  for (let i = 0; i <9; i++) {     // 혼자 해본거
+    //   for(let j= 9; j > i; j--){
+    //     document.write("&nbsp");
+    //   }
+    //   for (let k = 8; k < i; k++){
+    //     document.write("*");
+
+    //   }
+    //   for (let z = 9; z > i*2; z--){
+    //     document.write("*");
+    //    }   document.write(`<br>`);
+    //   }
+    document.write(`<hr>`);
+
+    for (let i = 0; i < 5; i++) {
+      for (let j = 4; j > i; j--) {
+        document.write("&nbsp");
+      }
+      for (let k = 1; k < 2 * i + 2; k++) {
+        document.write("*");
+      }
+      document.write(`<br>`);
+    }
     
+   
+    //     *
+    //    ***
+    //   *****
+    //  *******
+    // *********
+    //   *********
+    //  *******
+    //   *****
+    //    ***
+    //     *
+    
+    for (let i = 0; i < 4; i++) {
+      for (let j = 0; j <= i; j++) {
+        document.write("&nbsp");
+      }
+      for (let k = 4; k > i; k--) {
+        document.write("*");
+      }
+      for (let z = 3; z > i; z--) {
+        document.write("*");
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<h1>마름모 모양</h1>`);
   </script>
 </html>
