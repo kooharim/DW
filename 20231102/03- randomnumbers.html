@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      background-color: lemonchiffon;
+      border: 2px solid red;
+      width: 200px;
+      height: 300px;
+      overflow: auto;
+    }
+  </style>
+  <body>
+    <input type="button" value="시작" onclick="randproc()" />
+    <hr color="blue" />
+    <h1>출력위치</h1>
+    <div id="res"></div>
+  </body>
+  <script>
+     //배열 할때만 [] 씀
+    let numarr = [];
+    function randproc() {
+      for (let i = 0; i <5; i++) {
+        numarr[i] = parseInt(Math.random() * 100 + 1);
+      }
+      console.log(numarr);
+
+      //1~100까지의 숫자 5개 생성
+      // 2 id가 res인 div에 숫자 5개 추가 (p태그 사용)
+      //2.1 p태그 생성
+      //2.2 생성한 p태그에 text에 넣는다
+      const p = document.createElement("p");
+      //    p.innerHTML= "새로 생성한 p태그 입니다."
+      p.innerHTML = numarr.toString();
+
+      // div요소를 가져와서 p태그를 넣어준다
+      const res = document.getElementById("res");
+      res.append(p);
+    }
+    let user = confirm("confirm()은 사용자의 답변을 전달합니다.");
+
+  </script>
+</html>

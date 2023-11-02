@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-function</title>
+  </head>
+  <body>
+     <button onclick="showDislog ()">대화상자 오픈 안녕</button>
+    <button onclick="greeting('구하림',' 뱀부사장')">대화상자 오픈 뱀부</button>
+    <button onclick="returntest1()">return 테스트1</button>
+    <button onclick="returntest2()">return 테스트2</button> 
+  </body>
+  <script>
+    function showDislog() {
+      alert("안녕하세요^^");
+    }
+
+    function greeting(name, position) {
+      //   alert(name + "" + position + "님을 환영합니다.");
+      alert(`${name} ${position} 님을 환영합니다.`);
+      return `파라미터는 ${name} 과 ${position} 입니다.`;
+    }
+
+    function returntest1() {
+      console.log(showDislog());
+    }
+    function returntest2() {
+      console.log(greeting("구하림", "뱀부사장"));
+    }
+  </script>
+</html>
