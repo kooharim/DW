@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 300px;
+      height: 600px;
+      border: 2px solid lawngreen;
+      border-radius: 10px;
+      position: absolute;
+      top: 100px;
+      left: 200px;
+      padding: 0 10px;
+      overflow: auto;
+    }
+    p {
+      background-color: lemonchiffon;
+      padding: 10px 10px;
+      border-radius: 10px;
+      border: 2px solid lightgreen;
+    }
+  </style>
+  <body>
+    <input type=" text" id="input" placeholder="할 일을 적어주세요." />
+    <button onclick="clickfunc()">CLICK</button>
+    <div>
+      <!-- <p>할일1</p>
+      <p>할일2</p>
+      <p>할일3</p>
+      <p>할일4</p>
+      <p>할일5</p>
+      <p>할일6</p>
+      <p>할일1</p>
+      <p>할일2</p>
+      <p>할일3</p> -->
+    </div>
+  </body>
+
+  <script>
+    function clickfunc() {
+      //1. input요소를 가져온다.
+      const input = document.querySelector("#input");
+      //2. 가져온 input요소의 value를 꺼낸다.
+      const inputVal = input.value;
+      // 2-1 가져온 값이 value공백 이면
+
+      //내용을 입력해 주세요, 라는 alert띄우고 함수 종료  , retun 함수를 종료시켜줌
+      if (inputVal == "") {
+        alert("내용을 입력해주세요");
+        return;
+      }
+      //3. p태그를 만든다.    <p></p> 이 상태임
+      const p = document.createElement("p");
+      //4. 만든 p 테그에 거져온  input value 를 널는다
+      //4-2 0~255까지의  랜덤 한 숫자 3개 입력
+      let colorArr = [];
+      for (let i = 0; i < 3; i++) {
+        colorArr[i] = parseInt(Math.random() * 256);
+      }
+      console.log(colorArr);
+      //4-3  p태그의 background-color 로 바꿔준다
+
+      p.innerHTML = inputVal;
+
+      p.style.backgroundColor = `rgb(${colorArr.toString()})`;
+      const div = document.querySelector("div");
+       const luma = 
+       0.2216 * colorArr[0] + 0.7152 * colorArr[1] + 0.0722 * colorArr[2]+ 0.0845
+       console.log(luma);
+       p.style.color= parseInt(luma) <= 155 ? "white":"black";
+      //6. 가져온 div요소에 만든 p태그룰 추가
+      div.append(p);
+
+      //  input value 공백으로 만든다.
+      input.value = "";
+    }
+  </script>
+</html>

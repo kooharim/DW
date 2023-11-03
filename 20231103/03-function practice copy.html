@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type=" text" id="input" placeholder="과일이름을 입력해주세요." />
+    <button onclick="clickfunc()">CLICK</button>
+    <h2></h2>
+  </body>
+
+  <script>
+    function clickfunc() {
+      //1. input요소를 가져온다.
+      const input = document.querySelector("#input");
+      //2. 가져온 input요소의 value를 꺼낸다.
+      const inputVal = input.value;
+      //3. p태그를 만든다.    <p></p> 이 상태임
+      const p = document.createElement("p");
+      //4. 만든 p 테그에 거져온  input value 를 널는다
+      p.innerHTML = inputVal;
+      //5. h2 요소를 가져온다
+      const h2 = document.querySelector("h2");
+      //6. 가져온 h2요소에 만든 p태그룰 추가
+      h2.append(p);
+
+      //  input value 공백으로 만든다.
+      input.value = "";
+    }
+  </script>
+</html>
