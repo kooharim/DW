@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="KO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const arr = [1, 3, 5, 7, 9, "smith", true];
+    document.write(`<h1>1. push() 함수 </h1>`);
+    // 1. 원본 배열을 변형시키는 함수
+
+    // 2. 원본 배열을 변형시키지 않고 참조만 한는 함수
+    // 3. 원본 배열을 변형시키지 않고 여러번 반복해서  참조하는 함수
+    const arrLength = arr.push(11, false);
+    document.write(`<h1>push 이후의 배열 :[${arr}]</h1>`);
+    document.write(`<h2>push 이후의 배열 길이 :[${arrLength}]</h2>`);
+
+    document.write(`<hr>`);
+    // pop함수
+    //- 배열의 가장 마지막 요소를 제거하고, 그 제거된 요소를 반환한다.
+    document.write(`<h1>pop으로 제거된 요소 : ${arr.pop()}</h1>`);
+    document.write(`<h1>pop 이후의 배열 : ${arr}</h1>`);
+    
+    document.write(`<hr>`);
+    // 3. unshift () 함수 - 하나 이상의 요소를 배열의 가장 앞에 추가한다.
+    document.write(`<h1>unshift 이후의 배열길이 : ${arr.unshift(-1, -3)}</h1>`);
+    document.write(`<h2>unshift 이후의 배열 : ${arr}</h2>`);
+    document.write(`<hr>`);
+    //4. shift () 함수 - 배열의 첫번째 요소를 제거하고, 그 제거된 요소를 반환한다. 
+    document.write(`<h1>shift 로 제거한 요소  : ${arr.shift()}</h1>`);
+    document.write(`<h2>shift 이후의 배열 : ${arr}</h2>`);
+    
+    document.write(`<hr>`);
+    //5. reverse () 함수 - 배열 요소의 순서를 전부 반대로 바꾼다.
+    document.write(`<h1>shift 로 제거한 요소  : ${arr.reverse()}</h1>`);
+    document.write(`<h2>reverse 이후의 배열 : ${arr}</h2>`);
+
+    //6. sort () 함수- 배열의 요소들을 알파벳 순서에 따라 정렬 한다
+    // 단, 요소들을 문자열 취급하여 정렬
+    const strArr= ["그리스","미국","한국","중국", "일본","미국"]
+    const numArr= [10,21,2,3,1]
+    stArr.sort();
+    numArr.sort();
+    document.write(`<h1>sort 이후의 atrArr : [${strArr}]</h1>`)
+    document.write(`<h1>sort 이후의 numArr : [${unmArr}]</h1>`)
+    document.write(`<hr>`);
+    //7. spilce  () 함수- 기존의 배열요소를 제거하거나 새로운 배열요소를 
+    // 첫번째 파라미터는 새로운 요소가 삽입될 위치의 인덱스이며 두변째 
+    document.write(`<hr>`);
+    const arr2= [1, true,"Javascript","자바스크립트"];
+    document.write(`<h1> splice이전의 배열: [${arr2}]</h1>`);
+    document.write(`<h1> splice 로 제거된 요소들 : [${arr2.splice(1,2, false, "Java")}] </h1>`);
+    document.write(`<h1> splice 이후의 배열: [${arr2}]</h1>`);
+  </script>
+</html>
