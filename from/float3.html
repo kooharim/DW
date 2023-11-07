@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrap{width: 900px; border:2px solid black ;}
+    .box1{box-sizing:border-box;
+    width: 300px; background-color: red; float: left;}
+
+    .box2{box-sizing:border-box;
+    width: 300px; background-color:yellow; float: left;}
+    .box3{box-sizing:border-box;
+    width: 300px; background-color:blue;float: left;}
+    .wrap::after{
+        content:"안녕" ;
+        display: block ;
+        clear: both;
+        }
+</style>
+<div class="wrap"></div>
+    <div class="box1">aa</div>
+    <div class="box2">bb</div>
+    <div class="box3">cc</div>
+</div>
+
+    
+
+
+</body>
+</html>

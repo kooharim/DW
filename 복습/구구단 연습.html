@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      margin: 20px;
+      float: left;
+    }
+    table,
+    th {
+      border: 1px solid lawngreen;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      padding: 10px 15px;
+    }
+    th {
+      background-color:rgb(15, 108, 108);
+    }
+    td {
+      border: 1px dotted limegreen;
+    }
+  </style>
+  <body></body>
+  <script>
+    for (let i = 2; i <= 9; i++) {
+      document.write(`<table>`);
+      document.write(`<tr><td> ${i}단</td></tr>`);
+      for (let j = 1; j <= 9; j++) {
+        document.write(`<tr><td> ${j}x ${i}=${i * j}</td></tr>`);
+      }
+    document.write(`</table>`);
+    }
+ 
+  </script>
+</html>
