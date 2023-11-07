@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <input type=" text" id="input" placeholder="이름을 적어주세요."/>
+  </head>
+  <body>
+    <input type=" text" id="input" placeholder="이름을 적어주세요." />
     <button onclick="clickfunc()">CLICK</button>
     <p></p>
-</body>
+  </body>
 
-<script>
-function clickfunc(){
-    // 1. input요소를 가져온다,
-    const input=document.querySelector("#input");
-    // 2. 가져온 input 의 값(value)을 가져온다.
-    const inputVal= input.value;
-    //p요소를 가져옴
-    const p = document.querySelector("p");
-    // 4. 가져온 Value를 p
-    p.innerHTML=inputVal;
-   // 5. 입력되어있는 input의 value를 공백으로 바꿔준다.
-   input.value="";
+  <script>
+    function clickfunc() {
+      // 1. input요소를 가져온다,
+      const input = document.querySelector("#input");
+      // 2. 가져온 input 의 값(value)을 가져온다.
+      const inputVal = input.value;
+      //p요소를 가져옴
+      const p = document.querySelector("p");
+      // 4. 가져온 Value를 p
+      p.innerHTML = inputVal;
+      // 5. 입력되어있는 input의 value를 공백으로 바꿔준다.
+      input.value = "";
     }
-</script>
-</html>0
+  </script>
+</html>
