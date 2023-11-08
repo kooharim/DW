@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setTimeout</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    p {
+      background-color: lemonchiffon;
+      padding: 10px 10px;
+      border-radius: 10px;
+      border: 2px solid lightgreen;
+    }
+  </style>
+  <body>
+    <p>버튼을 누르면 3초마다 경고 박스가 화면에 표시됩니다.</p>
+    <button onclick="showAlert()">눌러</button>
+    <button onclick="stopInterval()">반복취소</button>
+  </body>
+  <script>
+    let startInterval;
+    function showAlert() {
+      startInterval = setInterval(function () {
+        alert("setInterval()을 사용하여 3초 이후에 표시되었습니다.");
+      }, 3000);
+    }
+    function stopInterval() {
+      clearInterval(startInterval);
+    }
+  </script>
+</html>

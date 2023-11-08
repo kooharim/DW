@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="숫자게임하러 가기" onclick="openpopup()" />
+    <input type="button" value="게임창 닫기" onclick="closepopup()" />
+  </body>
+  <script>
+    let child;
+    function openpopup() {
+      child = open("01-number guess.html", "_blank", "width=1000, height=500");
+    }
+    function closepopup() {
+      child.close();
+    }
+  </script>
+</html>
