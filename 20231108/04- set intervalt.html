@@ -26,8 +26,20 @@
     let startInterval;
     function showAlert() {
       startInterval = setInterval(function () {
-        alert("setInterval()을 사용하여 3초 이후에 표시되었습니다.");
-      }, 3000);
+        // alert("setInterval()을 사용하여 3초 이후에 표시되었습니다.");
+
+        // rgb 코드를 만들 수 있도록 3개의 랜덤 숫자 생성
+        //1.1 생성된 랜덤 숫자를 저장할 배열 변수
+        const colorArr = [];
+        for (let i = 0; i < 3; i++) {
+          colorArr.push(parseInt(Math.random() * 256));
+        }
+        // 2. 배경색상을 변경하려고 하는 대상을 가져온다.(P태그)
+        const Ptag = document.querySelector("p");
+        //3. 가져온 p태그위 style 속성의 backgroundcolor 에 접근하여
+        //pgb으로 위에서 생성해준 랜덤숫자 3개를 넣어준다
+        Ptag.style.backgroundColor = `rgb(${colorArr.toString()})`;
+      }, 1000);
     }
     function stopInterval() {
       clearInterval(startInterval);
