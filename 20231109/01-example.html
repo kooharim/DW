@@ -26,40 +26,88 @@
     //    ex) 3 ==> a + b = 3
     //    ex) 15 ==> a * b = 15
 
+    // 1.
     console.log("3+4=", x + y);
     console.log("3-4=", x - y);
     console.log("3x4=", x * y);
     console.log("3%4=", x % y);
 
+    // //2.
+    // console.log(`x+y= ${x + y}`);
+    // console.log(`x-y= ${x - y}`);
+    // console.log(`x*y= ${x * y}`);
+    // console.log(`x/y= ${x / y}`);
+
     // 4. 1번에서 선언한 변수 두개의 대소 비교를 하여 어떤 변수가 큰지를
     //    alert 창으로 출력할 수 있게 작성해보세요.(조건문 사용)
     //    ex) a가 b 보다 크면 a가 b보다 큽니다.
     //    ex) b가 a 보다 크면 b가 a보다 큽니다.
-    // let a = 50;
-    // let b = 23;
-    // if (a > b) {
-    //   alert("a는b보다 큽니다.");
-    // } else if (a < b) {
-    //   alert("a는 b 보다 작습니다.");
-    // }
+    let a = 50;
+    let b = 23;
+    if (a > b) {
+      alert("a는b보다 큽니다.");
+    } else if (a < b) {
+      alert("a는 b 보다 작습니다.");
+    }
     // 5. 비어있는 객체 하나를 생성해보세요.
-    // let Arr1 = {};
+    let obj = {};
     // 6. 위에서 만든 객체에 num1과 num2 라는 속성을 추가하고
     //    각각에 1번 문제에서 만든 a, b 를 할당해보세요.
-    let Arr1 = { num1: x };
-    let Arr2 = { num2: y };
+
+    //1.
+    // let obj1 = { num1: x };
+    // let obj2 = { num2: y };
+    // //2.
+    // obj.num1 = x;
+    // obj.num2 = y;
+    //3.
+    obj["num1"] = x;
+    obj["num2"] = y;
 
     // 7. 위에서 만든 객체의 속성을 콘솔창에 각각 출력해보세요.
-    console.log(Arr1);
-    console.log(Arr2);
+    //1.
+    console.log(obj.num1);
+    console.log(obj.num2);
+    //  //2.
+    //   console.log(obj["num1"]);
+    //   console.log(obj["num2"]);
+
     // 8. 비어있는 배열을 선언하고 그 배열에 1부터 10까지 숫자를 추가해보세요.
     //    (선언 이후에 값을 넣는 방법 사용)
-    let Arr = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
-    console.log(Arr);
+    //1.
+    // const Arr = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+    // console.log(Arr);
+    //2.
+    const Arr = [];
+    Arr[0] = 1;
+    Arr[1] = 2;
+    Arr[2] = 3;
+    Arr[3] = 4;
+    Arr[4] = 5;
+    Arr[5] = 6;
+    Arr[6] = 7;
+    Arr[7] = 8;
+    Arr[8] = 9;
+    Arr[9] = 10;
+
+    // //3.
+    //     Arr.push(1);
+    //     Arr.push(2);
+    //     Arr.push(3);
+    //     Arr.push(4);
+    //     Arr.push(5);
+    //     Arr.push(6);
+    //     Arr.push(7);
+    //     Arr.push(8);
+    //     Arr.push(9);
+    //     Arr.push(10);
     // 9. 비어있는 배열을 선언하고 1 ~ 100 까지의 숫자를 추가해보세요.(반복문 사용)
+    const Arr2 = [];
     for (let i = 1; i <= 100; i++) {
-      console.log(`${i}`);
+      Arr2.push(i);
     }
+    console.log(Arr2);
+
     // 10. 비어있는 배열을 선언하고 1 ~ 100 까지의 숫자중 짝수만 추가해보세요.(반복문 사용)
     for (let i = 1; i <= 100; i++) {
       if (i % 2 == 0) {
@@ -80,11 +128,28 @@
     Alert();
     // 13. 파라미터를 두개 받는 함수를 생성하고 함수 호출시 두개 파라미터의
     //     합이 콘솔창에 출력되도록 작성해보세요.
-    function A(A1, A2) {
-      console.log(`${A1 + A2}`);
-    }
-    A(5, 10);
+    // function A(A1, A2) {
+    //   console.log(`${A1 + A2}`);
+    // }
+    // A(5, 10);
 
-    // 14. 위 함수를 호출시 결과가 body 태그에 있는 p 태그에 추가되어 화면에 나타나도록 작성해보세요.
+    // 파라미터 = 넘겨줘야 되는 값, 함수 안에서 사용 하는 변수
+
+    // function sum(a, b) {
+    //   console.log(a + b);
+    // }
+    // sum(4, 6);   //sum 함수호출
+
+    // 14. 위 함수를 호출시 결과가 body 태그에 있는 p 태그에 추가되어
+    //화면에 나타나도록 작성해보세요.
+    function sum(x, y) {
+      //1, p태그를 가져온다.
+      const pTag = document.querySelector("#aa"); // #붙이고
+      // document.getElementById(aa); // #을 꼭 빼야됨
+      //2 가져온 p태그에 x+y의값을 추가한다,
+      //  <p id ="aa">x+y</p> == > innerHTML
+      pTag.innerHTML = x + y;
+    }
+    sum(4, 6);
   </script>
 </html>
