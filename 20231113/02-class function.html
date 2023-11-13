@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02- classfunction</title>
+  </head>
+  <style>
+    div {
+      width: 500px;
+      height: 500px;
+      border: 3px solid lawngreen;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .blue {
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <div id="div1" class="void"></div>
+    <button id="btn">노란색으로 변경</button>
+    <button id="btn2">배경색 제거</button>
+    <button id="btn3">토글버튼</button>
+    <button id="btn4">yellow & blue</button>
+  </body>
+  <script>
+    const btn = document.getElementById("btn");
+    const div1 = document.getElementById("div1");
+    btn.addEventListener("click", function () {
+      const divClass = div1.classList; //요소의 클레스를 확인
+      //   alert(divClass);
+      div1.classList.add("yellow");
+    });
+    const btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click", function () {
+      div1.classList.remove("yellow");
+    });
+    const btn3 = document.getElementById("btn3");
+    btn3.addEventListener("click", function () {
+      // toggle 함수에 작성해준 크레스가 있으면 삭제하고 ,
+      // 없으면 추가해 준다.
+      div1.classList.toggle("yellow");
+    });
+    const btn4 = document.getElementById("btn4");
+    btn4.addEventListener("click", function () {
+      const classcheck = div1.classList.contains("yellow");
+
+      // 1. id가  div1  요소의 클레스를 확인한다.
+
+      // 2. 클레스에 yellow가있으면 yellow를 삭제하고 blue추가,
+      //blue 가 있으면 blue를 삭제하고 yellow를 추가.
+      if (classcheck) {
+        div1.classList.remove("yellow");
+        div1.classList.add("blue");
+      } else {
+        div1.classList.remove("blue");
+        div1.classList.add("yellow");
+      }
+    });
+  </script>
+</html>
