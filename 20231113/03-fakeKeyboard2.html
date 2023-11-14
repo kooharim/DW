@@ -128,23 +128,43 @@
       const myInput = document.getElementById("my-input");
       const key = document.getElementById("key");
       const code = document.getElementById("code");
-
+      const keydown = document.getElementById("keypress");
+      const keypress = document.getElementById("keydown");
+      const keyup = document.getElementById("keyup");
       function onkeyEvent(e) {
         // 눌린 키에 대한 요소를 가져온다.
         const el = document.querySelector(`#${e.code}`);
         el.classList.add("on");
+        // keydown div에 check클레스를 추가한다.
+        keydown.classList.add("check");
+        setTimeout(function () {
+          keydown.classList.remove("check");
+        }, 300);
       }
+
       // 눌린 키를 화면상에서 회색으로 변경한다. (클레스를 적용하여)
+      
       function upkeyEvent(e) {
+
         const el = document.querySelector(`#${e.code}`);
         // 손가락을 땟을 때의 키에대한 요소를 가져온다.
         el.classList.remove("on");
         key.innerHTML = `key: ${e.key}`;
         code.innerHTML = `code: ${e.key}`;
+        keyup.classList.add("check");
+        setTimeout(function () {
+          keyup.classList.remove("check");
+        }, 300);
+      }
+      function presskeyEvent(e) {
+        keypress.classList.add("check");
+        setTimeout(function () {
+          keypress.classList.remove("check");
+        }, 300);
       }
       myInput.addEventListener("keydown", onkeyEvent);
+      myInput.addEventListener("keypress", presskeyEvent);
       myInput.addEventListener("keyup", upkeyEvent);
     </script>
   </body>
 </html>
-s

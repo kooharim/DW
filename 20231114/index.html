@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DW messenger</title>
+    <link rel="stylesheet" href="messner.css" />
+  </head>
+  <body>
+    <img class="background" src="../20231114/img/구름과 산 .jpg" />
+    <div class="container">
+      <!-- heder 생대방 정보 표시  및 전화 (음성) 통화버튼  -->
+      <div class="header">
+        <button class="back-btn">
+          <img src="../20231114/img/left-arrow.png" width="30" height="30" />
+        </button>
+        <img
+          class="profile-pic"
+          src="../20231114/img/profile.png"
+          width="40"
+          height="40"
+        />
+        <div class="info-block">
+          <p class="username">친구</p>
+          <p class="status">1시간 전에 활동</p>
+        </div>
+        <div class="cll-box">
+          <button>
+            <img src="../20231114/img/phone-call.png" width="20" height="20" />
+          </button>
+          <button>
+            <img src="../20231114/img/video-call.png" width="20" height="20" />
+          </button>
+        </div>
+      </div>
+      <!-- 대화내용 표시부 -->
+      <div id="chat-box">
+        <div class="bubble fried-bubble">안녕</div>
+        <div class="bubble fried-bubble">뭐해?</div>
+        <div class="bubble fried-bubble">또 통화 중이지?</div>
+        <!-- <div class="bubble my-bubble">엉 ㅋㅋㅋㅋㅋㅋㅋ</div>
+        <div class="bubble my-bubble">왜?</div> -->
+      </div>
+      <!-- 대화 작성 -->
+      <div class="footer">
+        <textarea id="input" placeholder="메세지를 입력하세요."></textarea>
+        <button id="send">
+          <img src="../20231114/img/send.png" width="24" height="24" />
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const chatbox = document.querySelector("#chat-box");
+    const input = document.querySelector("#input");
+    const send = document.querySelector("#send");
+
+    function sendMyText() {
+      const newMessage = input.value;
+      if (newMessage.length == 0) {
+        return;
+      }
+      // <div></div>
+      const div = document.createElement("div");
+      div.classList.add("bubble", "my-bubble");
+      // <div class "bubble my bubbel"> 텍스트</div>
+      div.innerHTML = newMessage;
+
+      chatbox.append(div);
+      input.value = "";
+    }
+    send.addEventListener("click", sendMyText);
+
+    function sendMyTextByEnter(e) {
+      //   console.log(e.Key, e.shiftKey);
+      if (e.key == "Enter" && !e.shftKey) {
+        //메세지를 보냄 (Enter 키만 눌렀을 때 )
+        // !true == false / !false == true
+        sendMyText();
+        e.preventDefaylt(); // 기본 이벤트를 막아준다.true
+      }
+    }
+    input.addEventListener("keypress", sendMyTextByEnter);
+  </script>
+</html>
