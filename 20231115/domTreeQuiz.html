@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>진행중인 과목</h2>
+    <ul id="doing-list">
+      <li>인터렉티브 자바스크립트</li>
+      <li>반응형 css</li>
+      <li>웹 HTML</li>
+      <li>jQuery</li>
+    </ul>
+    <h2>완료한 과목</h2>
+    <ul id="done-list">
+      <li>프로그래밍 In Javascript</li>
+      <li>핵심 Javascript</li>
+      <li>기초 Javascript</li>
+      <li>모던Javascript</li>
+      <li>웹 퍼블리싱</li>
+      <li>HTML 핵심개념</li>
+    </ul>
+  </body>
+  <script>
+    const bodyTag = document.querySelector("body");
+    bodyTag.children[2].previousElementSibling.children[0].style.backgroundColor =
+      "green";
+    console.log(bodyTag);
+    // bodyTag.firstElementchlid  ==>  글씨색상 red
+
+    bodyTag.firstElementChild.nextElementSibling.children[0].style.color =
+      "red";
+    // bodyTag.childen[1]==> font- size: 32px
+    bodyTag.children[1].firstElementChild.style.fontSize = "32px";
+
+    const doinglist = document.querySelector("#doing-list");
+    const donelist = document.querySelector("#done-list");
+    doinglist.children[2].nextElementSibling.style.backgroundColor = "green";
+
+    // doneList.parentElement ==> 글씨 색상  blue
+    donelist.parentElement.children[1].lastElementChild.style.color = "blue";
+    // doingList.parenrElement ==> font - size: 32px
+    doinglist.parentElement.children[1].children[3].style.fontSize = "32px";
+  </script>
+</html>

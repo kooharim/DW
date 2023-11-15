@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DomTree</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1 id=" title-1">과일</h1>
+      <div>
+        <ul id="list-1">
+          <li>사과</li>
+          <li>바나나</li>
+          <li>딸기</li>
+          <li>배</li>
+          <li>복숭아</li>
+          <li>포도</li>
+          <li>귤</li>
+          <li>수박</li>
+        </ul>
+      </div>
+
+      <h1 id="title-2">자동차</h1>
+      <ul id="list-2">
+        <li>지바겐</li>
+        <li>아반떼</li>
+        <li>그랜저</li>
+        <li>모닝</li>
+        <li>제네시스</li>
+        <li>비엠더블유</li>
+        <li>벤츠</li>
+        <li>레이</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const ul = document.getElementById("list-1");
+    // const li = document.getElementById("list-2");
+    console.log(ul);
+
+    // 자식요소 (노드)
+    // console.log(ul.children[0]);
+    ul.children[4].style.backgroundColor = "pink"; //=> <li>복숭아</li>
+    // console.log(ul.firstChild);
+    console.log(ul.firstElementChild.innerHTML);
+    console.log(ul.lastElementChild.innerHTML);
+    // 부모요소
+    // console.log(ul.parentElement);
+    ul.parentElement.style.border = "5px solid pink";
+    // ul.parentElement.parentElement
+
+    //부모요소 와 조상요소
+    console.log(ul.closest("div#content"));
+
+    // //형제요소
+    // console.log(ul.previousElementSibling);
+    // console.log(ul.nextElementSibling);
+
+    // console.log(ul.nextElementSibling.nextElementSibling);
+
+    // li.lastElementChild.style.backgroundColor = "yellow";
+
+    // ul.nextElementSibling.nextElementSibling.lastElementChild.style.backgroundColor =
+    //   "teal";
+  </script>
+</html>
