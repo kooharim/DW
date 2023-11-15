@@ -7,9 +7,9 @@
   </head>
   <body>
     <div id="content">
-      <h1 id=" title-1">과일</h1>
       <div>
-        <ul id="list-1">
+      <h1 id=" title-1">과일</h1>
+       <ul id="list-1">
           <li>사과</li>
           <li>바나나</li>
           <li>딸기</li>
@@ -20,7 +20,7 @@
           <li>수박</li>
         </ul>
       </div>
-
+      <div>
       <h1 id="title-2">자동차</h1>
       <ul id="list-2">
         <li>지바겐</li>
@@ -47,7 +47,8 @@
     console.log(ul.lastElementChild.innerHTML);
     // 부모요소
     // console.log(ul.parentElement);
-    ul.parentElement.style.border = "5px solid pink";
+    ul.parentElement.style.border = "3px solid pink";
+    ul.parentElement .nextElementSibling.style.border = "3px solid green";
     // ul.parentElement.parentElement
 
     //부모요소 와 조상요소

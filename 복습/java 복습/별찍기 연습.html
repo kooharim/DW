@@ -1,69 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body></body>
-<script>
+  </head>
+  <body></body>
+  <script>
     // *****
     // *****
     // *****
     // *****
     // *****
-   
-    for( let i=0; i<5; i++ ){
-        for(let j=0; j<5; j++ ){
+
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j < 5; j++) {
         document.write(`*`);
-        }
-        document.write(`<br>`);
-        }
-        document.write(`<hr>`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
     // *
     // **
     // ***
     // ****
     // *****
-    
-    
-    for( let i=0; i<6; i++ ){
-        for(let j=0; j<i; j++ ){
-        document.write(`*`);
-        }
-        document.write(`<br>`);
-        }
-        document.write(`<hr>`);
 
+    for (let i = 0; i < 6; i++) {
+      for (let j = 0; j < i; j++) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
 
     // *****
     // ****
     // ***
     // **
     // *
-    for( let i=0; i<5; i++ ){
-        for(let j=5; j>i; j-- ){
+    for (let i = 0; i < 5; i++) {
+      for (let j = 5; j > i; j--) {
         document.write(`*`);
-        } 
-        document.write(`<br>`);
-        }
+      }
+      document.write(`<br>`);
+    }
 
-        //별이 다 떨어져 있음 
-        document.write(`<hr>`);
-        for( let i=0; i<5; i++ ){
-        for(let j=5; j>i; j-- ){
-            document.write("&nbsp");
-            document.write(`*`);
-          }
-          for(let j=5; j>i; j-- ){
-          
-          }
-          document.write(`<br>`);
-        } 
-        
+    //별이 다 떨어져 있음
+    document.write(`<hr>`);
+    for (let i = 0; i < 5; i++) {
+      for (let j = 5; j > i; j--) {
+        document.write("&nbsp");
+        document.write(`*`);
+      }
+      for (let j = 5; j > i; j--) {}
+      document.write(`<br>`);
+    }
 
-
-        
     //   *****
     //    ****
     //     ***
@@ -71,50 +64,40 @@
     //       *
     document.write(`<hr>`);
 
-    for( let i=0; i<5; i++ ){
-        for(let j=5; j>i; j-- ){
-            document.write("&nbsp");
-           
-          }
-          for(let j=5; j>i; j-- ){
-            document.write(`*`);
-          }
-          document.write(`<br>`);
-        } 
-        document.write(`<hr>`);
-
-
+    for (let i = 0; i < 5; i++) {
+      for (let j = 5; j > i; j--) {
+        document.write("&nbsp");
+      }
+      for (let j = 5; j > i; j--) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
 
     //     *
     //    ***
-    //   ***** 
+    //   *****
     //  *******
     // *********
-    
 
- 
-    for (let i=0; i<5; i ++){
-        for(let j= 4;j>i; j --){
-            document.write("&nbsp");
-        }
-        for (let k = 0; k <= i; k++) {
+    for (let i = 0; i < 5; i++) {
+      for (let j = 4; j > i; j--) {
+        document.write("&nbsp");
+      }
+      for (let k = 0; k <= i; k++) {
         document.write("*");
-        
-        } 
-        for (let z = 0; z < i; z++) {
+      }
+      for (let z = 0; z < i; z++) {
         document.write("*");
-    
-        } 
-        document.write(`<br>`);
+      }
+      document.write(`<br>`);
     }
 
-
-
-    //   ********* 
+    //   *********
     //    *******
     //     *****
     //      ***
     //       *
- 
-</script>
+  </script>
 </html>
