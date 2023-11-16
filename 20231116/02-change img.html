@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change img</title>
+  </head>
+  <body>
+    <div>
+      <img id="image" src="../resource/여우.jpg" width="300" height="170" />
+    </div>
+
+    <input type="button" onclick="changeImage()" value="눌러" />
+  </body>
+  <script>
+    // 방법 1
+    // function changeImage() {
+    //   document.getElementById("image").src = "../resource/gromi.jpg";
+    // }
+    function changeImage() {
+      const img = document.getElementById("image");
+      img.setAttribute("src", "../resource/gromi.jpg");
+      console.log(img.getAttribute("src"));
+      console.log(img.getAttribute("id"));
+      console.log(img.getAttribute("class"));
+    }
+
+    // // 방법 2
+    // function changeImage() {
+    //   document.getElementById("image");
+    //   img.src = "../resource/gromi.jpg";
+    // }
+  </script>
+</html>

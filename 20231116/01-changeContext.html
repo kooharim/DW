@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="ex">데이지 꽃이 피었습니다.</div>
+    <a href="#" onclick="get()">div 요소 가져오기</a><br />
+    <a href="#" onclick="set('데이지꽃이 피었습니다.')"> div 요소 내용 변경</a><br />
+    <!-- <a href="#" onclick="set('데이지꽃이 피었습니다.')"> div 요소 내용 변경</a><br /> -->
+  </body>
+  <script>
+    function get() {
+      const val = document.getElementById("ex").innerHTML;
+      alert(val);
+    }
+    function set() {
+      const userstr = prompt("좋아하는 꽃 입력하세요.");
+      document.getElementById("ex").innerHTML = userstr;
+    }
+  </script>
+</html>

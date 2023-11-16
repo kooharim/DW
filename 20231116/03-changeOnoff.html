@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #wrapper {
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(135deg, black, white);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #main {
+      /* width: 400px;
+      height: 400px; */
+      width: 80%;
+      height: 80%;
+      border-radius: 50%;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #main.on {
+      border: 15px solid black;
+    }
+    img {
+      filter: contrast(0%);
+    }
+    img:hover {
+      cursor: pointer;
+    }
+    img.on {
+      filter: opacity(0.5) drop-shadow(0 0 0 red) saturate(1000%);
+    }
+  </style>
+  <body>
+    <div>
+      <div id="wrapper">
+        <div id="main" class="on">
+          <img src="../resource/전원.png" class="on" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const imgTag = document.querySelector("img");
+    const divTag = document.querySelector("#main");
+    imgTag.addEventListener("click", function () {
+      imgTag.classList.toggle("on");
+      divTag.classList.toggle("on");
+    });
+  </script>
+</html>
