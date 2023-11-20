@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <p>이름 <input type="text" name="name" /></p>
+
+      성별 <input type="radio" name="gender" id="male" value="남자" />
+      <label for="female">남자</label>
+      <input type="radio" name="gender" id="female" value="여자" />
+      <label for="female">여자</label>
+    </form>
+    <p>
+      좋아하는 색 <input type="checkbox" name="color" id="red" />
+      <label for="red">빨강색</label>
+      <input type="checkbox" name="color" id="orange" />
+      <label for="orange">주황색</label>
+      <input type="checkbox" name="color" id="yellow" />
+      <label for="yellow">노랑색</label>
+      <input type="checkbox" name="color" id="green" />
+      <label for="green">초록색</label>
+      <input type="checkbox" name="color" id="blue" />
+      <label for="blue">파랑색</label>
+      <input type="checkbox" name="color" id="black" />
+      <label for="black">검은색</label>
+    </p>
+    <input type="button" value="결과물 출력" id="Btn" />
+    <textarea rows="10" cols="100"></textarea>
+    <br /><br />
+  </body>
+  <script>
+    const Btn = document.getElementById("Btn");
+    Btn.addEventListener("click", function () {
+      const name = document.querySelector("input[name=name]").value;
+      const radioEl = document.querySelector("input[type=radio]:checked");
+      const checkboxArr = document.querySelectorAll(
+        "input[type=checkbox]:checked"
+      );
+
+      console.log(checkboxArr);
+      const newArr = [];
+      checkboxArr.forEach(function (el) {
+        newArr.push(el.nextElementSibling.innerHTML);
+      });
+      const textareaEl = document.querySelector("textarea");
+      textareaEl.innerHTML = `${name}씨! \n 당신의 성별은 ${radioEl.value}이고, 
+        \n 좋아하는 색은 ${newArr.toString()} 이군요`;
+    });
+  </script>
+</html>
