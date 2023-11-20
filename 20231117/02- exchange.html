@@ -82,25 +82,53 @@
       <div class="holder2">
         <div>
           <input type="number" />
-          <button>추가하기</button>
+          <button onclick="addItem()">추가하기</button>
         </div>
       </div>
     </div>
+
+    <div
+      style="
+        border: 3px solid darkorange;
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+      "
+      onclick="alert(div태그)"
+    >
+      DIV
+      <p style="border: 2px solid green; width: 150px; height: 50px"></p>
+    </div>
   </body>
   <script>
-    const pTags = document.querySelectorAll("p");
+    // const pTags = document.querySelectorAll("p");
 
-    pTags.forEach(function (el) {
-      el.addEventListener("click", function () {
-        el.classList.toggle("selected");
-      });
-    });
+    // pTags.forEach(function (el) {
+    //   el.addEventListener("click", function () {
+    //     el.classList.toggle("selected");
+    //   });
+    // });
+
     // holder1 의 마지막 요소
 
     const holder1 = document.querySelector(".holder1");
 
     const firstDiv = holder1.firstElementChild;
+    firstDiv.addEventListener("click", function (e) {
+      console.log(e.target, e.target.tagName);
+      if (e.target.tagName == "P") {
+        e.target.classList.toggle("selected");
+      }
+    });
+
     const lastDiv = holder1.lastElementChild;
+
+    lastDiv.addEventListener("click", function (e) {
+      console.log(e.target, e.target.tagName);
+      if (e.target.tagName == "P") {
+        e.target.classList.toggle("selected");
+      }
+    });
 
     function leftToRigt() {
       // holder1의 첫번째 자식 데려오기
@@ -111,6 +139,36 @@
         el.setAttribute("class", "");
         lastDiv.append(el);
       });
+    }
+    function leftToRigtAll() {
+      const selectedpTags = firstDiv.querySelectorAll("p");
+      selectedpTags.forEach(function (el) {
+        el.remove();
+        el.setAttribute("class", "");
+        lastDiv.append(el);
+      });
+    }
+    function rigtToLeft() {
+      const selectedpTags = lastDiv.querySelectorAll("p[class=selected]");
+      selectedpTags.forEach(function (el) {
+        el.remove();
+        el.setAttribute("class", "");
+        firstDiv.append(el);
+      });
+    }
+    function rigtToLeftAll() {
+      const selectedpTags = lastDiv.querySelectorAll("p");
+      selectedpTags.forEach(function (el) {
+        el.remove();
+        el.setAttribute("class", "");
+        firstDiv.append(el);
+      });
+    }
+    function addItem() {
+      const inputNum = document.querySelector("input[type=number]").value;
+      const pTag = document.createElement("p"); // <p></p>
+      pTag.innerHTML = inputNum; //<p>9</p>
+      firstDiv.append(pTag);
     }
   </script>
 </html>
