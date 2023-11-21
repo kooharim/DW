@@ -47,6 +47,34 @@
         container.append(span);
       });
     }
+    function wordRain() {
+      const words = document.querySelectorAll(".word");
+      console.log(words[0].getBoundingClientRect().bottom);
+      words[0].getBoundingClientRect().top;
+      setInterval(function () {
+        words.forEach(function (el) {
+          const reactTop = el.getBoundingClientRect().top;
+          el.style.top = `${reactTop - 75}px`;
+          if (el.getBoundingClientRect().bottom > 810) {
+            // alert("game over");
+            el.remove;
+          }
+        });
+      }, 1000);
+    }
+    function wordRain() {
+      const words = document.querySelectorAll(".word");
+      setInterval(function () {
+        words.forEach(function (el) {
+          const.colorArr=[];
+          for (let i = 0; i < 3; i++) {
+            colorArr.push(Math.floor(Math.random() * 256));
+          }
+          el.style.color = `rgb(${colorArr.tostring()})`;
+        });
+      }, 1000);
+    }
+
     const input = document.querySelector("#input");
     input.addEventListener("change", function () {
       const word = document.querySelector(`span[id=${input.value}]`);
@@ -63,5 +91,7 @@
       input.value = "";
     });
     init();
+    wordRain();
+    input.focus();
   </script>
 </html>

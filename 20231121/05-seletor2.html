@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <p>형제 선택자 에 대하여</p>
+    <h3>꼬마버스 타요 가족들을 소개 합니다.</h3>
+    <p>타요</p>
+    <p>로기</p>
+    <p>리니</p>
+    <p>가니</p>
+  </body>
+  <script>
+    // h3 다음의 모든 형제의 배경색을 변경, 길이 지정, 가운데 정렬
+    // $("h3 ~ *")
+    //   .css("backgroundColor", "pink")
+    //   .css("width", "500px")
+    //   .css("text-align", "center");
+
+    $("h3~*").css({
+      backgroundColor: "yellow",
+      width: "500px",
+      "text-align": "center",
+    });
+    // h3  다음의 첫번째 형제의 글자를  굵게 , 크게: font- weight
+    $("h3+*").css("fontWeight", "200").css("font-size", "100px");
+  </script>
+</html>

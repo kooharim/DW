@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-celcctor1</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <p>이 문단에는 <span>스팬</span>엘리먼트가 있다.</p>
+    <div>
+        이 디비전에도 <span>스팬</span>엘리먼트가 있다.
+        <P>디비전의 내부 문단의 <span>스팬</span>엘리먼트이다.</P>
+        <div>
+            <p>
+            내부 디비전의 다시 문단 속 아주
+            <strong>깊은곳에</strong>
+            <em>숨어있는</em>
+            <span>스팬</span>엘리먼트도 있다.
+        </p>
+    </div>
+</div>
+  </body>
+  <script>
+    // span 태그의 배경색 변경. yellow
+    $("span").css("backgound-color","yellow");
+    // div의 모든 후손중 span 태그의 테두리 - red
+    $("div span").css("boder","2px solid red");
+    // div의 바로 다음 자식 span태그의 테두리 blue
+    $("div > span").css("boder","2px solid blue");
+  </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head><script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  
+  <body>
+    <h1>제목입니다</h1>
+    <h2 id="para">작은 제목입니다</h2>
+    <h2 class="sample">샘플입니다.</h2>
+  </body>
+  <script>
+    //전체 배경색을 변경
+    let id = $("h1");
+    $("*").css("background-color", "#7CDEFC");
+    // h1 요소의 글자색 을 파랑
+    $("h1").css("color", "blue");
+    // id요소가 para인 요소의 글자색은 녹색
+    $("#para").css("color", "green");
+    // class 가 smple 요소의 글자색은 빨강
+    $(".sample").css("color", "red");
+  </script>
+</html>
