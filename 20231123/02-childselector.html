@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <p>여자에게 인기있는 남자들</p>
+    <ol>
+      <li>능력있는 남자</li>
+      <li>돈많은 남자</li>
+      <li>잘 생긴 남자</li>
+    </ol>
+    <p>남자에게 인기있는 여자들</p>
+    <ol>
+      <li>예쁜여자</li>
+      <li>귀여운 여자</li>
+      <li>섹시한 여자</li>
+    </ol>
+    <p>숫자(li가 외동 일때, only-child)</p>
+    <ol>
+      <li>1</li>
+    </ol>
+  </body>
+  <script>
+    $("li:first").css("border", "5px solid red");
+    $("li:first").css("background-color", "yellow");
+    $("li:first-child").css("border", "5px solid red");
+
+    $("li:last-child").css("background-color", "lightYellow");// 그룹 안에서 마지막
+    $("li:only-child").css("background-color", "teal"); // 외동으로 있을 때만 가능
+    $("li:nth-child(2)").not("li:first-child").css("border", "3px solid blue");
+  </script>
+</html>

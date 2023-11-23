@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="id" value="아이디" disabled /><br />
+      <input type="password" name="pass" /><br />
+      <select name="my select">
+        <option>option1</option>
+        <option selected>option2</option>
+        <option>option3</option>
+        <option>option4</option>
+      </select>
+      <br />
+      <textarea name="enTextarea" rows="10" class="20">text</textarea><br />
+      여행's
+      <input type="checkbox" value="여행1" checked />여행1
+      <input type="checkbox" value="여행2" checked />여행2
+      <input type="checkbox" value="여행3" checked />여행3
+      <input type="checkbox" value="여행4" checked />여행4
+      <input type="checkbox" value="여행5" checked />여행5 <br /><br />
+      <input type="button" value="확인" disabled /><br />
+    </form>
+  </body>
+  <script>
+    $(":disabled").css("border", "3px solid red");
+    $("input:disabled").css("border", "3px solid blue");
+    $(":selected").css("background-color", "orange");
+    $(":enabled").css("border", "3px solid green");
+    console.log($("input:checked"));
+  </script>
+</html>
