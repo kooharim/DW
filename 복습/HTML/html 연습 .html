@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html 연습</title>
+  </head>
+
+  <body>
+    <label for="name">고객명:</label>
+    <input type="text" name="name" id="name" /> <br /><br />
+    <label for="phone">전화변호:</label>
+    <input type="tel" name="tel" id="pone" /><br /><br />
+    <label for="email">이메일:</label>
+    <input type="email" name="email" id="email" /><br /><br />
+
+    <label for="pants">pants</label>
+    <select name="pants" id="pants">
+      <option value="바지종류를 선택하세요.">바지종류를 선택하세요.</option>
+      <option value="청바지">청바지</option>
+      <option value="청바지">슬렉스</option>
+      <option value="청바지">멜빵바지</option>
+      <option value="청바지">생지바지</option>
+      <option value="청바지">나팔바지</option></select
+    ><br />
+    <fieldset>
+      <legend>바지 사이즈</legend>
+      <input type="radio" name="size" value="Xs" />XS<br /><br />
+      <input type="radio" name="size" value="s" />S<br /><br />
+      <input type="radio" name="size" value="M" />M<br /><br />
+      <input type="radio" name="size" value="L" />L<br /><br />
+      <input type="radio" name="size" value="XL" />XL<br /><br />
+    </fieldset>
+    <fieldset>
+      <legend>양말 선택</legend>
+      <input type="checkbox" name="socks" value="검은 양말 " /> 검은 양말
+      <input type="checkbox" name="socks" value="흰색 양말 " /> 흰색 양말
+      <input type="checkbox" name="socks" value="무지개 양말 " /> 무지개 양말
+    </fieldset>
+    <label for="time">희망 배송시간</label>
+    <input type="time" name="time" id="time" /><br /><br />
+    <label for="request"> 희망 요청사항</label>
+    <textarea name="request" id="request" rows="10" cols="30"></textarea
+    ><br /><br />
+    <button>주문 하기</button><br /><br />
+    <label for="level"> 지금 고객님의 기분 정도^^ </label><br /><br />
+    <input type="range" name="level" id="level" />
+  </body>
+</html>

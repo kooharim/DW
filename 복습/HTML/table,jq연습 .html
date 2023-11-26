@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+      font-size: 30px;
+    }
+    
+  </style>
+  <body>
+    <table border="1">
+      <tr>
+        <th>과일</th>
+        <th>색상</th>
+      </tr>
+      <tr>
+        <th>딸기</th>
+        <th>빨간색</th>
+      </tr>
+      <tr>
+        <th>레몬</th>
+        <th>노란색</th>
+      </tr>
+      <tr>
+        <th>수박</th>
+        <th>초록색</th>
+      </tr>
+    </table>
+  </body>
+  <script>
+    $("tr:even").css("backgroundColor", "pink");
+    $("tr:odd").css("backgroundColor", "hotpink");
+  </script>
+</html>
