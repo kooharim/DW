@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-propFunction</title>
+  </head>
+  <style>
+    * {
+      font-size: 32px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <form>
+      체크박스(라디오버튼) :
+      <input type="checkbox" id="checkTest" checked /><br /><br />
+
+      리스트박스(select객체) :
+      <select id="selTest">
+        <option value="1">하나</option>
+        <option value="2">둘</option>
+        <option value="3" selected>셋</option>
+        <option value="4">넷</option></select
+      ><br /><br />
+
+      text객체 (readonly) :
+      <input type="text" value="가나다" id="txtTest" readonly /><br /><br />
+
+      button객체(disabled) :
+      <input type="button" value="실행" id="runBtn" />
+      <input type="button" value="실행 취소" id="cancelBtn" />
+    </form>
+  </body>
+  <script>
+    const chkBox = $("#checkTest");
+    $("#checkTest").on("click", function () {
+      console.log(chkBox.attr("checked"));
+      console.log(chkBox.prop("checked"));
+    });
+
+    $("#selTest").on("click", function () {
+      const selectedEl = $("#selTest > option:selected");
+      console.log(selectedEl.attr("selected"));
+      console.log(selectedEl.prop("selected"));
+    });
+
+    $("#txtTest").on("click", function () {
+      const inputTag = $("#txtTest");
+      console.log(inputTag.attr("readonly"));
+      console.log(inputTag.prop("readonly"));
+    });
+
+    $("#runBtn").on("click", function () {
+      $("#runBtn").attr("disabled", true);
+    });
+    $("#cancelBtn").on("click", function () {
+      $("#runBtn").prop("disabled", false);
+    });
+  </script>
+</html>

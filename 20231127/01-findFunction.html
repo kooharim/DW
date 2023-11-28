@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-findFunction</title>
+  </head>
+  <style>
+    .wrapper {
+      width: 500px;
+    }
+    .wrapper * {
+      display: block;
+      border: 2px solid lightgray;
+      color: lightgray;
+      padding: 10px;
+      margin: 20px;
+    }
+    ul {
+      list-style-type: none;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <div class="wrapper">
+      wrapper div
+      <div>
+        div
+        <ul>
+          ul
+          <li>
+            li
+            <span>span</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        div
+        <ul>
+          ul
+          <li>
+            li
+            <span>span</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    // $(".wrapper").find("ul").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+
+    // $("span").parentsUntil("div").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+
+    // 1. 첫번째 div의 li 에서 시작해서 두번째 div의 span 선택
+    $($(".wrapper > div")[0])
+      .find("li")
+      .parents("div")
+      .next()
+      .find("span")
+      .css({
+        color: "red",
+        border: "2px solid red",
+      });
+    // 2. 두번째 div의 span 에서 시작해서 첫번째 div의 span 선택
+    $("span:last").parents(".wrapper").find("span").css({
+      color: "red",
+      border: "2px solid red",
+    });
+  </script>
+</html>

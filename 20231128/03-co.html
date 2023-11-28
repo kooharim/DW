@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <p>HIDE 버튼을 누르면 화면에서 없어져라</p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+  </body>
+  <script>   // 투명했다가 보임 opacity 가 적용됨
+    $("#hide").on("click", function () {
+      $("p").hide(300);
+    });
+    $("#show").on("click", function () {
+      $("p").show(300);
+    });
+    $("#toggle").on("click", function () {
+      $("p").toggle(300);
+    });
+  </script>
+</html>

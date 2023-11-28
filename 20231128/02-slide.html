@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <style>
+    #flip,
+    #panel {
+      padding: 5px;
+      font-size: 30px;
+      text-align: center;
+      background-color: #555;
+      color: white;
+      border: 2px solid #666;
+      border-radius: 3px;
+      height: 50px;
+    }
+    #panel {
+      /* display: none; */
+    }
+  </style>
+  <body>
+    <button id="stop">stop sliding</button>
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <div id="flip">여기 클릭</div>
+    <div id="panel">hi</div>
+  </body>
+  <script>
+    $("#flip").on("click", function () {
+      //   $("#panel").slideDown("5000"); // 밀리세컨즈 단위
+      //   $("#panel").slideUp("500"); // 밀리세컨즈 단위
+      $("#panel").slideToggle("3000"); // 밀리세컨즈 단위
+    });
+    $("#stop").on("click", function () {
+      $("panel").stop();
+    });
+  </script>
+</html>

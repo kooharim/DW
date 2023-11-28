@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-attrFunction</title>
+  </head>
+  <style>
+    div {
+      border: 2px solid blue;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <div>
+      <img src="../resources/img/blackSiba.jpg" />
+      <img src="../resources/img/image1.jpg" />
+      <img src="../resources/img/image2.jpg" />
+      <img src="../resources/img/image4.jpg" />
+      <img src="../resources/img/image5.jpg" />
+      <br />
+      <button onclick="setTitle()">눌러보세요</button>
+    </div>
+  </body>
+  <script>
+    function setTitle() {
+      // 1. img 태그 전체 요소를 가져온다.
+      const imgTags = $("img");
+
+      // 2. 전체 요소에 대한 반복문을 실행하여 title에 src와 똑같은 값을 넣어준다.
+      imgTags.each(function (i, el) {
+        const srcVal = $(el).attr("src");
+        $(el).attr("title", srcVal);
+      });
+    }
+  </script>
+</html>

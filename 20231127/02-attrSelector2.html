@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-attrSelector2</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <style>
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  </style>
+  <body>
+    <a href="http://tjdaewoo.co.kr/">DW아카데미</a><br /><br />
+    <a href="mailto:kjy.devops@gmail.com">kjy에게 메일보내기</a><br /><br />
+    <div><label>Some images:</label></div>
+    <div>
+      <img src="../resources/img/image1.jpg" id="img1" alt="Hibiscus" />
+      <img
+        src="../resources/img/image2.jpg"
+        id="little-Bear"
+        title="A dog named little Bear"
+      />
+      <img src="../resources/img/image3.jpg" id="verbena" alt="Verbena" />
+      <img
+        src="../resources/img/image4.jpg"
+        id="cozmo"
+        title="A puppy named Cozmo"
+      />
+      <img src="../resources/img/image5.jpg" id="tigerLily" alt="Tiger Lily" />
+      <img src="../resources/img/image6.jpg" id="little" title="coffeePot" />
+      <img src="../resources/img/image7.png" />
+    </div>
+    <div id="someDiv">
+      이곳은 ID속성이 <tt>someDiv</tt>인 &lt;div&gt;태그 입니다.
+    </div>
+    <form>
+      <div>
+        <label>Text:</label>
+        <input type="text" id="aTextField" name="someTextField" />
+      </div>
+      <button type="submit" id="submitButton">Submit</button
+      ><input type="button" value="클릭~~" />
+    </form>
+  </body>
+  <script>
+    // type이 button인 input요소의 배경색 변경
+    $("input[type=button]").css("backgroundColor", "yellow");
+
+    // href가 mailto 로 시작하는 a 요소의 배경색 변경
+    $("a[href ^= mailto]").css({
+      backgroundColor: "yellow",
+      "text-decoration": "none",
+    });
+
+    // id 가 img1인것만 제외한(아닌) img요소의 테두리 변경
+    $("img[id != img1]").css("border", "3px solid blue");
+
+    // src가 png로 끝나는 img 요소의 테두리 변경
+    $("img[src $= png]").css("border", "3px solid red");
+  </script>
+</html>
