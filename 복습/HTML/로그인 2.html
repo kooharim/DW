@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    form {
+      border-collapse: collapse;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid gray;
+    }
+    button {
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <div>
+      <p>NAVER</p>
+
+      아이디 <input type="text" name="ID" id="ID" /> <br />
+
+      <label for="id"></label>
+      비밀번호<input type="password" name="password" id="password" />
+
+      <label for="password"></label>
+      <input type="radio" name="chack" id="chack" />
+      <label for="radio"> 로그인 상태유지 </label>
+      <button>로그인</button>
+    </div>
+  </body>
+  <script>
+    $("tr:even").css("backgroundColor", "green");
+    $("button").css("backgroundColor", "green");
+  </script>
+</html>
