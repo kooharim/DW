@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-animate</title>
+  </head>
+  <style>
+    div {
+      background-color: green;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <body>
+    <div>DIV</div>
+  </body>
+  <script>
+    $("div").on("click", function () {
+      //   $("div").animate({ left: "250px" });
+      //   $("div").animate({
+      //     left: "250px",
+      //     top: "250px",
+      //     opacity: "0.3",
+      //     height: "500px",
+      //     width: "500px",
+      //   });
+      $("div").animate({
+        height: "600px",
+        opacity: 0.3,
+        fontSize: "2em",
+        backgroundColor: "yellow",
+      });
+      $("div").animate({
+        width: "600px",
+        opacity: 0.8,
+        fontSize: "3em",
+        backgroundColor: "red",
+      });
+      $("div").animate({
+        height: "300px",
+        opacity: 0.3,
+        fontSize: "4em",
+        backgroundColor: "aqua",
+      });
+      $("div").animate({
+        width: "300px",
+        opacity: 1,
+        fontSize: "5em",
+        backgroundColor: "purple",
+      });
+    });
+  </script>
+</html>

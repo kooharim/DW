@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    form {
+      background-color: cornflowerblue;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      text-align: center;
+      cursor: pointer;
+      left: 750px;
+    }
+    div {
+      background-color: darkcyan;
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 50px;
+      left: 50px;
+    }
+    p {
+      background-color: burlywood;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 50px;
+      left: 50px;
+      margin: 0;
+    }
+  </style>
+  <!-- html까지 버블링가능 -->
+  <body>
+    <!-- <div onclick="alert('div에 할당한 핸들러')">
+      <p onclick="alert('p태그에 할당한 핸들러')">
+        <code onclick="alert('code에 할당한 핸들러')">EM</code>을 클릭했는데도
+        <code>div</code>에 할당한 이벤트가 동작합니다.
+      </p>
+    </div> -->
+    <form>
+      FORM
+      <div>
+        DIV
+        <p>p</p>
+      </div>
+    </form>
+    <div onclick="alert('button을 감싸고 있는 div')">
+      <button>클릭</button>
+    </div>
+  </body>
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("click", function (e) {
+      alert(`target : ${e.target.tagName}, this : ${this.tagName}`);
+    });
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", function (e) {
+      alert("버튼 클릭");
+      e.stopPropagation();   // 위로 전파되는 걸 막는 함수 stopPropagation
+    }); 
+  </script>
+</html>

@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  margin: 80px auto;
+  width: 865px;
+}
+.header{
+padding: 80px 40px;
+background-color: #f5f7fb;
+color: #464e5e;
+text-align: right;
+border-radius: 80px;
+}
+
+.add-item{
+    text-decoration: none;
+    color: #464e5e;
+    border: 2px dashed #dee3ec;
+    border-radius:8px ;
+    padding: 24px 48px;
+}

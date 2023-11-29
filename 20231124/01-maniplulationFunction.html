@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-manipulationFunction</title>
+  </head>
+  <style>
+    p {
+      cursor: pointer;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <!-- <p id="container">클릭해보세요.</p> -->
+    <p title="Tulips">튜울립</p>
+    <p title="Chrysanthemum">국화</p>
+    <p title="Koala">코알라</p>
+    <p title="Hydrangeas">수국</p>
+  </body>
+  <script>
+    $("#container").on("click", function () {
+      $("#container").append(`
+            <span>새로 생성된 span 태그 입니다.</span>
+            <table>
+                <tr>
+                    <th>필드1</th>
+                    <th>필드2</th>
+                </tr>
+                <tr>
+                    <td>table 태그</td>
+                    <td>span 태그</td>
+                </tr>
+            </table>
+        `);
+    });
+
+    const imgArr = ["siba.jpg", "blackSiba.jpg", "image1.jpg", "image2.jpg"];
+    $("p").on("click", function () {
+      const idx = $(this).index();
+      //   $(this).append(`<img src="../resources/img/${imgArr[idx]}" />`);
+      //   $(`<img src="../resources/img/${imgArr[idx]}" />`).appendTo(this);
+      //   $(this).prepend(`<img src="../resources/img/${imgArr[idx]}" />`);
+      //   $(`<img src="../resources/img/${imgArr[idx]}" />`).prependTo(this);
+
+      //   $(this).after(`<img src="../resources/img/${imgArr[idx]}" />`);
+      //   $(`<img src="../resources/img/${imgArr[idx]}" />`).insertAfter(this);
+      //   $(this).before(`<img src="../resources/img/${imgArr[idx]}" />`);
+      $(`<img src="../resources/img/${imgArr[idx]}" />`).insertBefore(this);
+    });
+  </script>
+</html>

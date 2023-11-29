@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-findFunction</title>
+  </head>
+  <style>
+    .wrapper * {
+      display: block;
+      border: 2px solid lightgray;
+      color: lightgray;
+      padding: 5px;
+      margin: 15px;
+    }
+    .wrapper {
+      width: 500px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <div class="wrapper">
+      <ul>
+        ul
+        <li class="start">li class="start"</li>
+        <li class="my">li class="my"</li>
+        <li>li</li>
+        <li class="my">li class="my"</li>
+        <li class="stop">li class="stop"</li>
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // $("li.start").next().css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+    // $("li.start").nextAll().css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+    // $("li.start").nextUntil("li.stop", ".my").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+
+    // $("li.start").siblings().css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+    // $("li.start").siblings("li.my").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+
+    // $("li.start").add("li.stop").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+
+    // $("li.start").parent().css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+
+    // $("li.start").parents("div").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+
+    $("li.start").parentsUntil("body").css({
+      color: "red",
+      border: "2px solid red",
+    });
+  </script>
+</html>
