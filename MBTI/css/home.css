@@ -2,19 +2,159 @@
   display: flex;
   margin: 80px auto;
   width: 865px;
+  gap: 40px;
 }
-.header{
-padding: 80px 40px;
-background-color: #f5f7fb;
-color: #464e5e;
-text-align: right;
-border-radius: 80px;
+.header {
+  position: sticky;
+  top: 80px;
+  /* fixed - 고정은 되지만 문장의 흐름에서 빠져버림 
+     sticky- 지정해준 위치에 도달하기 전까지는 static 과 비슷하게 움직인다.
+     + 멈춰야되는 곳을 지정을 안해주면 계속 고정되어있음 */
+  padding: 80px 40px;
+  background-color: #f5f7fb;
+  color: #464e5e;
+  text-align: right;
+  border-radius: 80px;
+}
+.header > h1 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+.header > h1 > .acent {
+  font-weight: 800;
+}
+.filter {
+  background-color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* box-shadow 순서 X, Y ,블러,그림자 색상 */
 }
 
-.add-item{
-    text-decoration: none;
-    color: #464e5e;
-    border: 2px dashed #dee3ec;
-    border-radius:8px ;
-    padding: 24px 48px;
+.content {
+  flex-grow: 1;
+  /* 
+  flex grow -기본값은 0  길이가 늘어나는 거  
+      shrink 기본 값은 1   길이가 줄어드는 거 */
+}
+.add-item {
+  text-decoration: none;
+  color: #464e5e;
+  border: 2px dashed #dee3ec;
+  border-radius: 8px;
+  padding: 24px 48px;
+  display: block;
+}
+.add-item:hover {
+  background-color: #f4f7fb;
+}
+.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.item {
+  display: flex;
+  padding: 16px 48px;
+  color: #bfc8da;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.item-id {
+  flex-shrink: 0;
+  width: 58px;
+  margin-right: 40px;
+}
+.item-mbti {
+  flex-shrink: 0;
+  width: 76px;
+  background-color: #f0f2f5;
+  color: #464e5e;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  margin-right: 24px;
+}
+.item-arrow {
+  width: 100%;
+  border-bottom: 2px dashed #bfc8da;
+  position: relative;
+}
+.item-arrow-icon {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 8px;
+}
+.item-color-chip {
+  flex-shrink: 0;
+  margin: 0 16px;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e8e8e8;
+  border-radius: 8px;
+}
+.item-color-code {
+  flex-shrink: 0;
+  width: 105px;
+}
+.remove-icon {
+  width: 12px;
+  height: 12px;
+}
+
+@media screen and (max-width: 940px) {
+  /* @media screen - 반응형 */
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 24px 16px;
+    gap: 24px;
+  }
+  .header-container{
+    position: sticky;
+    /* sticky- 자신의 부모영역 안에서만 움직임 */
+    top: 24px;
+    z-index: 1;
+    /* z-index- 앞으로 꺼내는거  */
+  }
+  .header {
+   
+    padding: 32px;
+    text-align: center;
+    border-radius: 32px;
+  }
+  .header > h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .filter {
+    padding: 20px 24px;
+  }
+  .item {
+    padding: 18px 16px;
+  }
+  .item-id {
+    width: 37px;
+    margin-right: 16px;
+  }
+  .item-mbti {
+    width: 54px;
+    margin-right: 16px;
+  }
+  .item-color-code {
+    width: 72px;
+  }
+  .item-color-chip {
+    margin-right: 8px;
+  }
 }
