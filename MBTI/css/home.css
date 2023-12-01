@@ -40,7 +40,7 @@
 .content {
   flex-grow: 1;
   /* 
-  flex grow -기본값은 0  길이가 늘어나는 거  
+  flex grow -기본값은 0  길이가 늘어나는 거   
       shrink 기본 값은 1   길이가 줄어드는 거 */
 }
 .add-item {

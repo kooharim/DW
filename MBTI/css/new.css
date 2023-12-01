@@ -1,0 +1,117 @@
+.container {
+  width: 416px;
+  margin: 80px auto;
+}
+.section {
+  margin: 30px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* space-between =  처음과 끝의 요소를 양 끝에 붙이고 여백을 균등하게 나눈다  */
+  align-items: center;
+}
+.cancel {
+  background-color: #edf0f5;
+  border-radius: 50;
+  padding: 18px;
+  display: flex;
+  border-radius: 42px;
+  justify-content: center;
+  align-items: center;
+}
+.cancel:hover {
+  background-color: #edf0f5;
+}
+.section-heading {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 24px 0;
+}
+.mbti-options {
+  display: flex;
+  margin: 16px 0;
+  gap: 16px;
+}
+
+.mbti-option {
+  border: 2px solid #edf0f2;
+  border-radius: 16px;
+  padding: 14px 40px;
+  color: #8892a6;
+  flex-grow: 1;
+  /* flex-grow: 1;  빈틈없이 꽉 채워짐*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  /* gap - 플렉스 요소가 고정되어있으면 gap을 쓴거임 */
+}
+.mbti-option:hover {
+  background-color: #edf0f2;
+  cursor: pointer;
+}
+
+.mbti-option.selected {
+  background-color: #464e5e;
+  border: 2px solid #464e5e;
+}
+.mbti-option.selected > .mbti-char {
+  color: #ffffff;
+}
+.mbti-char {
+  /* sapan 태그는 인라인 요소라서 원래는 width값을 줄 수없지만 
+  지금은 플렉스 안에있는 아이템 요소라 쓸 수 있음 */
+  width: 20px;
+  color: #464e5e;
+  font-size: 40px;
+  text-align: center;
+}
+.random {
+  background-color: #f4f7fb;
+  border-radius: 8px;
+  margin-left: 8px;
+  border: none;
+  padding: 8px;
+}
+.random:hover {
+  background-color: #f4f7fb;
+  cursor: pointer;
+}
+.Color-input {
+  background-color: #f4f7fb;
+  font-size: 24px;
+  width: 100%;
+  border: 2px solid #8892a6;
+  border-radius: 16px;
+  padding: 26px;
+}
+.Color-input:hover {
+  background-color: #e7ebf2;
+}
+.Color-input:focus {
+  border: 2px solid #464e5e;
+  box-shadow: inset 0px 4px 8px rgb(0, 0, 0, 0.15);
+}
+.color-input-chip {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  position: absolute;
+  top: 21px;
+  /* top- 25%도 맞음 */
+  right: 26px;
+}
+.Color-input-container {
+  position: relative;
+}
+.submit {
+  width: 100%;
+  background-color: #464e5e;
+  border: none;
+  border-radius: 16px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 22px;
+}
