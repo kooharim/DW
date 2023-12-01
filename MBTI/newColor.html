@@ -72,7 +72,7 @@
                 </button>
             </h2>
             <div class="Color-input-container">
-                <input class=" Color-input"type="text" value="#0988E3"/>
+                <input class="Color-input"type="text" value="#0988E3"/>
                 <span class="color-input-chip" style="background-color: cadetblue;"></span>
             </div>
         </div>
@@ -80,8 +80,23 @@
     </div>
 </body>
 <script>
- $("Color-input-container").on("change",function(){
+    // 자바스크립트
+    //     const colorInput = document.querySelector(".Color-input");
+    //  colorInput.addEventListener("change", function () {
+    //    const ColorVal = colorInput.value;
+    //    if (ColorVal.length == 7) {
+    //      const ColorChip = document.querySelector(".color-input-chip");
+    //      ColorChip.style.backgroundColor = ColorVal;
+    //   }
+    //  });
 
-   });
+// 제이쿼리
+ $(".Color-input").on("change", function () {
+       const colorVal = $(this).val();
+      if (colorVal.length == 7) {
+        $(".color-input-chip").css("backgroundColor", colorVal);
+       }
+    });
+
 </script>
 </html>
