@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Pretendard;
+  word-break: keep-all;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  background-color: #000000;
+  color: #d9d9d9;
+}
+section {
+  max-width: 1120px;
+  width: 100%;
+  margin: 80px auto;
+  padding: 0 36px;
+}
+.featured {
+  display: flex;
+  gap: 40px;
+}
+.featured-thumb {
+  border-radius: 24px;
+}
+.featured-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.featured-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #d9d9d9;
+  margin: 0;
+}
+.featured-description {
+  margin: 0;
+  color: #868686;
+}
+.featured-tag {
+  background-color: #18181b;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #565662;
+  width: fit-content;
+  /*width: fit-content;= content 크기에 맞춰짐 */
+}
+.playlists {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  /* flex-wrap:  wrap = 알아서 사이즈에 맞게 밑으로 내려감 */
+  justify-content: space-between;
+  /* space-betwee 양 옆에 붙음 */
+}
+.playlist {
+  flex-basis: 22%;
+  /*  flex-basis: 25%;- gap 이 없으면 25 가능 */
+}
+.playlist-thumb {
+  width: 100%;
+  border-radius: 16px;
+  font-weight: 700;
+  margin: 16px 0 8px;
+}
+.playlist-artist {
+  color: #868686;
+  margin: 0;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 40px 0;
+}
+.artists {
+  display: flex;
+  gap: 32px;
+}
+.artist {
+  text-align: center;
+  border-radius: 50px;
+}
+.artst-proflie {
+  width: 100%;
+}
+.artst-name {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 24px 0 0;
+}
+.stations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 1fr 1fr 1fr */
+  justify-content: center;
+  gap: 40px;
+}
+.station {
+  width: 100%;
+  border-radius: 16px;
+}
+.charts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: center - <a>에 수직 정렬을 안하면 맨 위에 붙음  */
+  margin: 32px;
+}
+.charts-title {
+  margin: 0;
+}
+.charts-see-all {
+  font-weight: 500;
+  font-size: 24px;
+  color: #d9d9d9;
+  text-decoration: none;
+  /* text-decoration: none; - 밑줄이 없어짐 */
+}
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 32px;
+}
+.chart {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.chart-cover {
+  border-radius: 16px;
+  width: 160px;
+  height: 160px;
+}
+.chart-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.chart-rank {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.chart-number{
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  font-weight: 700;
+  /* font-weight: 폰트 굵기*/
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+ display: flex;
+justify-content: center;
+align-items: center;
+}
