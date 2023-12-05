@@ -21,6 +21,7 @@ header {
   /* 끝에서 끝까지 채우기 위해서는 reft, right 둘다 줘야 채워짐 */
   z-index: 1;
   /* 순서만 바꿔줌  */
+  background-image: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0) 100%);
 }
 .wrap {
   margin: 0 auto;
@@ -139,10 +140,8 @@ header {
   font-weight: 700;
   font-size: 24px;
   margin: 0 0 16px;
-  
 }
-.card.event h3{
-
+.card.event h3 {
 }
 .card.event {
   border-color: #645acd;
@@ -157,15 +156,15 @@ header {
   border-radius: 8px;
   color: #000;
 }
-.benefits{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
 .benefits .wide {
-    grid-column:1/3;
-    /* grid 는 격자 
+  grid-column: 1/3;
+  /* grid 는 격자 
     1/3 분수가 아니라 1부터 3까지라는 뜻 */
-    grid-column-start: 1;
-    grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
