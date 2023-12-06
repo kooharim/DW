@@ -67,6 +67,11 @@ section {
   font-weight: 700;
   margin: 16px 0 8px;
 }
+.playlist-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 16px 0 0;
+}
 .playlist-artist {
   color: #868686;
   margin: 0;
@@ -87,7 +92,7 @@ section {
 .artst-proflie {
   width: 100%;
 }
-.artst-name {
+.artist-name {
   font-weight: 500;
   font-size: 24px;
   margin: 24px 0 0;
@@ -148,7 +153,7 @@ section {
   align-items: center;
   gap: 8px;
 }
-.chart-number{
+.chart-number {
   background-color: #1a1a1a;
   border-radius: 50%;
   font-weight: 700;
@@ -156,7 +161,62 @@ section {
   font-size: 24px;
   width: 40px;
   height: 40px;
- display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart-change {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.2);
+}
+.chart-change.up {
+  color: #d93045;
+}
+.charts-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+.charts-artist {
+  font-weight: 500;
+  font-size: 24px;
+  color: #868686;
+}
+@media screen and (max-width: 780px) {
+  .playlist {
+    flex-basis: 30%;
+  }
+  .chart-cover {
+    width: 130px;
+    height: 130px;
+  }
+  .charts-title {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .artst-name {
+    font-size: 17px;
+    margin: 15px 0 0;
+  }
+  .stations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+  .playlist {
+    flex-basis: 45%;
+  }
+
+  .chart-title {
+    font-size: 18px;
+  }
+
+  .chart-number {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .chart-change {
+    font-size: 12px;
+  }
 }
