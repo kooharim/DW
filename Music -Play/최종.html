@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../Music -Play/resource/css/music-player.css"
+    />
+  </head>
+  <body>
+    <!-- 사이드바 영역 시작 -->
+    <div class="sidebar">
+      <p style="color: #fff; font-weight: 600">
+        <span style="color: #7000ff">DW</span> Music
+      </p>
+      <ul class="menu-items">
+        <li class="menu-item">
+          <img src="resource/img/icon_home.svg" width="14" height="14" />
+          뮤직 홈
+        </li>
+        <li class="menu-item">
+          <img src="resource/img/icon_album.svg" width="14" height="14" /> 추천
+          앨범
+        </li>
+        <li class="menu-item active">
+          <img src="resource/img/icon_playlist.svg" width="14" height="14" />
+          뮤직 매거진
+        </li>
+        <li class="menu-item">
+          <img src="resource/img/icon_genre.svg" width="14" height="14" /> 뮤직
+          장르 별 보기
+        </li>
+      </ul>
+      <ul class="menu-items">
+        <li class="menu-item">혼자 보내는 조용한...</li>
+        <li class="menu-item">꼭 들어야 할 해외...</li>
+        <li class="menu-item">90년대 힙합 개론</li>
+        <li class="menu-item">스타벅스 음악 023</li>
+        <li class="menu-item">+ New Playlist</li>
+      </ul>
+    </div>
+    <!-- 사이드바 영역 끝 -->
+
+    <!-- 매거진 영역 시작 -->
+    <main>
+      <section>
+        <div class="featured">
+          <img
+            class="featured-thumb"
+            src="../Music -Play/resource/img/img_main_banner.png"
+          />
+          <div class="featured-content">
+            <div class="featured-tag">뮤직 매거진</div>
+            <h2 class="featured-title">
+              여행에서<br />
+              다시 일상으로
+            </h2>
+            <p class="featured-description">
+              비행기 표를 예매하고 짐을 챙기는 순간부터 여행이 시작된 것 같은
+              기분이죠, 화려한 여행지의 추억을 뒤로하고 다시 일상으로 돌아온
+              사람들을 위한 파워풀한 음악을 준비했습니다. 여행에서 재충전한
+              에너지를 모아서 힘찬 한 주를 시작해보는 건 어떨까요?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">이달의 플레이리스트</h2>
+        <div class="playlists">
+          <div class="playlist">
+            <img
+              class="playlist-thumb"
+              src="../Music -Play/resource/img/img_playlist_1.png"
+            />
+            <div class="playlist-title">여행을 떠나요</div>
+            <div class="playlist-artist">DW-music</div>
+          </div>
+          <div class="playlist">
+            <img
+              class="playlist-thumb"
+              src="../Music -Play/resource/img/img_playlist_2.png"
+            />
+            <div class="playlist-title">금요일 저녁의 카페에서</div>
+            <div class="playlist-artist">DW-music</div>
+          </div>
+          <div class="playlist">
+            <img
+              class="playlist-thumb"
+              src="../Music -Play/resource/img/img_playlist_3.png"
+            />
+            <div class="playlist-title">now집중할 time</div>
+            <div class="playlist-artist">DW-music</div>
+          </div>
+          <div class="playlist">
+            <img
+              class="playlist-thumb"
+              src="../Music -Play/resource/img/img_playlist_4.png"
+            />
+            <div class="playlist-title">몰디브 한잔</div>
+            <div class="playlist-artist">DW-music</div>
+          </div>
+          <div class="playlist">
+            <img
+              class="playlist-thumb"
+              src="../Music -Play/resource/img/img_playlist_5.png"
+            />
+            <div class="playlist-title">K-pop 믹스</div>
+            <div class="playlist-artist">DW-music</div>
+          </div>
+          <div class="playlist">
+            <img
+              class="playlist-thumb"
+              src="../Music -Play/resource/img/img_playlist_6.png"
+            />
+            <div class="playlist-title">공부를 위한 클레식</div>
+            <div class="playlist-artist">DW-music</div>
+          </div>
+          <div class="playlist">
+            <img
+              class="playlist-thumb"
+              src="../Music -Play/resource/img/img_playlist_7.png"
+            />
+            <div class="playlist-title">한국 시티팝 20선</div>
+            <div class="playlist-artist">DW-music</div>
+          </div>
+          <div class="playlist">
+            <img
+              class="playlist-thumb"
+              src="../Music -Play/resource/img/img_playlist_8.png"
+            />
+            <div class="playlist-title">편안하게 느긋하게</div>
+            <div class="playlist-artist">DW-music</div>
+          </div>
+          <div class="playlist">
+            <img
+              class="playlist-thumb"
+              src="../Music -Play/resource/img/img_playlist_9.png"
+            />
+            <div class="playlist-title">고요한 밤을 위한 BGM</div>
+            <div class="playlist-artist">DW-music</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">추천 아티스트</h2>
+        <div class="artists">
+          <div class="artist">
+            <img
+              class="artst-proflie"
+              src="../Music -Play/resource/img/img_artist_1.png"
+            />
+            <div class="artst-name">Neon 5</div>
+          </div>
+          <div class="artist">
+            <img
+              class="artst-proflie"
+              src="../Music -Play/resource/img/img_artist_2.png"
+            />
+            <div class="artst-name">곤잘레스</div>
+          </div>
+          <div class="artist">
+            <img
+              class="artst-proflie"
+              src="../Music -Play/resource/img/img_artist_3.png"
+            />
+            <div class="artst-name">케이시 킹</div>
+          </div>
+          <div class="artist">
+            <img
+              class="artst-proflie"
+              src="../Music -Play/resource/img/img_artist_4.png"
+            />
+            <div class="artst-name">Feak</div>
+          </div>
+          <div class="artist">
+            <img
+              class="artst-proflie"
+              src="../Music -Play/resource/img/img_artist_5.png"
+            />
+            <div class="artst-name">제이스모킹</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">느낌별 스테이션</h2>
+        <div class="stations">
+          <img
+            class="station"
+            src="../Music -Play/resource/img/img_station_1.png"
+          />
+          <img
+            class="station"
+            src="../Music -Play/resource/img/img_station_2.png"
+          />
+          <img
+            class="station"
+            src="../Music -Play/resource/img/img_station_3.png"
+          />
+          <img
+            class="station"
+            src="../Music -Play/resource/img/img_station_4.png"
+          />
+          <img
+            class="station"
+            src="../Music -Play/resource/img/img_station_5.png"
+          />
+          <img
+            class="station"
+            src="../Music -Play/resource/img/img_station_6.png"
+          />
+          <img
+            class="station"
+            src="../Music -Play/resource/img/img_station_7.png"
+          />
+          <img
+            class="station"
+            src="../Music -Play/resource/img/img_station_8.png"
+          />
+          <img
+            class="station"
+            src="../Music -Play/resource/img/img_station_9.png"
+          />
+        </div>
+      </section>
+      <section>
+        <div class="charts-header">
+          <h2 class="section-title charts-title">이달의 Top 100</h2>
+          <a class="charts-see-all" href="#">모두보기</a>
+        </div>
+        <ol class="charts">
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_1.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">1</div>
+                <span class="chart-change up">▲</span>
+              </div>
+              <div>
+                <div class="charts-title">사건의 수평선</div>
+                <div class="charts-artist">은하</div>
+              </div>
+            </div>
+          </li>
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_2.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">2</div>
+                <span class="chart-change">▼</span>
+              </div>
+              <div>
+                <div class="charts-title">FRAGILE</div>
+                <div class="charts-artist">세라핌</div>
+              </div>
+            </div>
+          </li>
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_3.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">3</div>
+                <span class="chart-change">-</span>
+              </div>
+              <div>
+                <div class="charts-title">Hype Girl</div>
+                <div class="charts-artist">OldJeans</div>
+              </div>
+            </div>
+          </li>
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_4.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">4</div>
+                <span class="chart-change">-</span>
+              </div>
+              <div>
+                <div class="charts-title">사랑은 늘 찾아와</div>
+                <div class="charts-artist">임빌런</div>
+              </div>
+            </div>
+          </li>
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_5.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">5</div>
+                <span class="chart-change up">▲</span>
+              </div>
+              <div>
+                <div class="charts-title">Black Venom</div>
+                <div class="charts-artist">PinkPink</div>
+              </div>
+            </div>
+          </li>
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_6.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">6</div>
+                <span class="chart-change">▼</span>
+              </div>
+              <div>
+                <div class="charts-title">취중고백</div>
+                <div class="charts-artist">멜로</div>
+              </div>
+            </div>
+          </li>
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_7.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">7</div>
+                <span class="chart-change up">▲</span>
+              </div>
+              <div>
+                <div class="charts-title">snowman</div>
+                <div class="charts-artist">지아</div>
+              </div>
+            </div>
+          </li>
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_8.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">8</div>
+                <span class="chart-change">▼</span>
+              </div>
+              <div>
+                <div class="charts-title">Hollywood</div>
+                <div class="charts-artist">검정바지</div>
+              </div>
+            </div>
+          </li>
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_9.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">9</div>
+                <span class="chart-change">▼</span>
+              </div>
+              <div>
+                <div class="charts-title">I Think I Like Her</div>
+                <div class="charts-artist">찰리 원더</div>
+              </div>
+            </div>
+          </li>
+          <li class="chart">
+            <img
+              class="chart-cover"
+              src="../Music -Play/resource/img/img_chart_10.png"
+            />
+            <div class="chart-info">
+              <div class="chart-rank">
+                <div class="chart-number">10</div>
+                <span class="chart-change">-</span>
+              </div>
+              <div>
+                <div class="charts-title">London</div>
+                <div class="charts-artist">체인스모킹</div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <!-- 매거진 영역 끝 -->
+
+    <!-- 플레이어 영역 시작 -->
+    <div></div>
+    <!-- 플레이어 영역 끝 -->
+  </body>
+</html>
