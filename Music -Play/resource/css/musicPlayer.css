@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Pretendard;
+  word-break: keep-all;
+  font-size: 16px;
+}
+
+body {
+  background-color: #000;
+  color: #d9d9d9;
+  margin: 0;
+}
+
+.sidebar {
+  padding: 16px;
+  background-color: #161519;
+  color: #8c8993;
+  width: 240px;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+}
+
+.menu-item {
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-item.active {
+  background-color: rgba(205, 187, 255, 0.1);
+  color: #ffffff;
+}
+
+main {
+  margin-left: 240px;
+  margin-bottom: 130px;
+}
+
+section {
+  max-width: 1120px;
+  width: 100%;
+  margin: 80px auto;
+  padding: 0 36px;
+}
+
+.featured {
+  display: flex;
+  gap: 40px;
+}
+
+.featured-thumb {
+  border-radius: 24px;
+}
+
+.featured-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.featured-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #d9d9d9;
+  margin: 0;
+}
+
+.featured-description {
+  margin: 0;
+  color: #868686;
+}
+
+.featured-tag {
+  background-color: #18181b;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #565662;
+  width: fit-content;
+}
+
+.playlists {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.playlist {
+  flex-basis: 22%;
+}
+
+.playlist-thumb {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.playlist-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 16px 0 8px;
+}
+
+.playlist-artist {
+  color: #868686;
+  margin: 0;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 40px 0;
+}
+
+.artists {
+  display: flex;
+  gap: 32px;
+}
+
+.artist {
+  /* width: 120px; */
+  text-align: center;
+  border-radius: 50%;
+}
+
+.artist-profile {
+  width: 100%;
+}
+
+.artist-name {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 24px 0 0;
+}
+
+.stations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.station {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.charts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.charts-title {
+  margin: 0;
+}
+
+.charts-see-all {
+  font-weight: 500;
+  font-size: 24px;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 32px;
+}
+
+.chart {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.chart-cover {
+  border-radius: 16px;
+  width: 160px;
+  height: 160px;
+}
+
+.chart-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chart-rank {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chart-number {
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-change {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.chart-change.up {
+  color: #d93045;
+}
+
+.chart-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.chart-artist {
+  font-weight: 500;
+  font-size: 24px;
+  color: #868686;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #4d4d54;
+}
+
+.progress {
+  background-color: #7000ff;
+  width: 70%;
+  height: 100%;
+}
+
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-main {
+  background-color: rgba(48, 48, 55, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  backdrop-filter: blur(15px);
+  flex: 1 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.current {
+  border-radius: 14px;
+}
+
+.title {
+  color: #d9d9d9;
+}
+
+.artist {
+  color: #8c8993;
+}
+
+.info,
+.time {
+  flex-basis: 300px;
+}
+
+.time {
+  text-align: right;
+  color: #8c8993;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

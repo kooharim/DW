@@ -53,6 +53,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 16px 40px;
+  backdrop-filter: ;
 }
 .info {
   display: flex;
@@ -80,4 +81,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+main {
+  margin-left: 240px;
+  margin-bottom: 130px;
 }

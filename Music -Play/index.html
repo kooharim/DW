@@ -15,7 +15,7 @@
 
   <body>
     <header>
-      <div class="wrap">DW-Music</div>
+      <div class="wrap"><span>DW-Music</span></div>
     </header>
     <section class="hero">
       <video
@@ -115,14 +115,20 @@
           </ul>
         </div>
         <div class="card wide">
-         <p class="cation">
-          3개월 동안 33% 할인된 가격으로 결제되고 3개월 후부터 매달 정상
-          가격으로 결제됩니다. 멤버십은 언제든지 해지하실 수 있고, 추가로
-          부담해야 할 금액은 없습니다. 모든 가격은 부가가치세가 포함된
-          가격입니다.
-         </p>
+          <p class="cation">
+            3개월 동안 33% 할인된 가격으로 결제되고 3개월 후부터 매달 정상
+            가격으로 결제됩니다. 멤버십은 언제든지 해지하실 수 있고, 추가로
+            부담해야 할 금액은 없습니다. 모든 가격은 부가가치세가 포함된
+            가격입니다.
+          </p>
         </div>
       </div>
     </section>
   </body>
+  <script>
+    const logo = document.querySelector("header .wrap > span");
+    logo.addEventListener("click", function () {
+      location.href = "최종.html";
+    });
+  </script>
 </html>

@@ -23,6 +23,10 @@ header {
   /* 순서만 바꿔줌  */
   background-image: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0) 100%);
 }
+
+header span{
+  cursor: pointer;
+}
 .wrap {
   margin: 0 auto;
   max-width: 1080px;
