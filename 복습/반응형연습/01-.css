@@ -1,0 +1,55 @@
+
+#box1{
+    background-color: aquamarine;
+    width: 100%;
+    height: 280px;
+    
+}
+#box2{
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 60px;
+}
+#box3{
+    background-color: blueviolet;
+    width: 50%;
+    height: 50px;
+}
+#box4{
+    background-color: cadetblue;
+    width: 100%;
+    height: 80px;
+}
+#box5{
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 80px;
+}
+@media screen and (min-width: 768px) {
+    #box1{
+        background-color: aquamarine;
+        width: 50%;
+        height: 80px;
+        
+    }
+    #box2{
+        background-color: blanchedalmond;
+        width: 50%;
+        height: 80px;
+    }
+    #box3{
+        background-color: blueviolet;
+        width: 50%;
+        height: 80px;
+    }
+    #box4{
+        background-color: cadetblue;
+        width: 50%;
+        height: 80px;
+    }
+    #box5{
+        background-color: cornflowerblue;
+        width: 50%;
+        height: 80px;
+    }
+}
