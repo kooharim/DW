@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-shareSkill</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../20231211/css/shareSkill.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ShareSkill</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">튜터신청</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">수업목록</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">회원가입</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">로그인</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 캐러셀 시작 -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="item" id="item1"></div>
+          <div class="carousel-caption d-none d-md-block intro">
+            <h2>음악을 배워보세요</h2>
+            <h3>멋진 뮤지션들이 주변에 있습니다.</h3>
+            <a href="#">수업 찾기</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="item" id="item2"></div>
+          <div class="carousel-caption d-none d-md-block intro">
+            <h2>메이크업을 배워보세요</h2>
+            <h3>멋진 메이크업 아티스트들이 주변에 있습니다.</h3>
+            <a href="#">수업 찾기</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="item" id="item3"></div>
+          <div class="carousel-caption d-none d-md-block intro">
+            <h2>요리를 배워보세요</h2>
+            <h3>멋진 요리사들이 주변에 있습니다.</h3>
+            <a href="#">수업 찾기</a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- 캐러셀 끝 -->
+    <div class="container">
+      <!-- 튜터 모집 alert 시작 -->
+      <div class="row">
+        <div class="col-12">
+          <div
+            class="alert alert-warning alert-dismissible fade show"
+            role="alert"
+          >
+            <strong>튜터 모집!</strong> 재능을 나누어 보아요.
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <!-- 튜터 모집 alert 끝 -->
+      <!-- 수업목록 시작 -->
+      <div class="row">
+        <div class="col-xl-3">
+          <a href="#" class="course">
+            <img src="../20231211/css/img/course1.jpg" class="course-img" />
+            <div class="info">
+              <h4>개성있는 일러스트 작품 만들기</h4>
+              <div class="lecture">
+                <img src="../20231211/css/img/profile.png" />
+                <span>구하림</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-3">
+          <a href="#" class="course">
+            <img src="../20231211/css/img/course1.jpg" class="course-img" />
+            <div class="info">
+              <h4>개성있는 일러스트 작품 만들기</h4>
+              <div class="lecture">
+                <img src="../20231211/css/img/profile.png" />
+                <span>구하림</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-3">
+          <a href="#" class="course">
+            <img src="../20231211/css/img/course1.jpg" class="course-img" />
+            <div class="info">
+              <h4>개성있는 일러스트 작품 만들기</h4>
+              <div class="lecture">
+                <img src="../20231211/css/img/profile.png" />
+                <span>구하림</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-3">
+          <a href="#" class="course">
+            <img src="../20231211/css/img/course1.jpg" class="course-img" />
+            <div class="info">
+              <h4>개성있는 일러스트 작품 만들기</h4>
+              <div class="lecture">
+                <img src="../20231211/css/img/profile.png" />
+                <span>구하림</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 수업목록 끝 -->
+    </div>
+  </body>
+</html>
