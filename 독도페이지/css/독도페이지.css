@@ -6,7 +6,7 @@ html {
   height: 100%;
 }
 body {
-  background-image: url(../img/독도\ 페이지\ 메인.jpg);
+  background-image: url(../img/img_visual01.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -18,4 +18,30 @@ body {
 img.main-font {
   margin: auto;
   display: block;
+  margin-top: 100px;
+}
+.main-btn {
+  display: block;
+  margin: auto;
+  margin-bottom: 500px;
+  border-radius: 30px;
+  border-color: #ffffff;
+  text-align: center;
+  background-color: tan;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  column-rule-color: teal;
+}
+.main-barogagi {
+  margin:100px;
+ margin-bottom: 900px;
+  padding: 30px;
+  width: 600px;
+  height: 300px;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+}
+.main-barogagi-btn{
+  border-radius: 30px;
 }
