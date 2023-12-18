@@ -83,7 +83,7 @@ img.main-font {
 }
 
 .baro {
-  background-color: cadetblue;
+  background-color: gainsboro;
   width: 800px;
   height: 400px;
   border-radius: 30px;
@@ -111,14 +111,14 @@ img.main-font {
   /* transform: translate(-50%, -50%); */
 }
 .guides {
-  background-color: orange;
+  background-color: gainsboro;
   width: 800px;
   height: 400px;
   border-radius: 30px;
   padding: 30px;
 }
-.guides > strong{
-font-size: 24px;
+.guides > strong {
+  font-size: 24px;
 }
 .guide-btn {
   border-radius: 30px;
@@ -127,4 +127,53 @@ font-size: 24px;
 }
 .guide-in > p span {
   display: flex;
+}
+
+.announcement {
+  display: flex;
+  margin: 100px;
+
+}
+
+.banner {
+  background-color:#ffffff;
+  font-size:10px ;
+  font-weight: 600px;
+  font-size: 20px;
+  width: 900px;
+  height: 300;
+  padding-left: 100px;
+  padding-top: 100px;
+  
+}
+.left-banner h3{
+  font-weight: 900px;
+}
+.swiper {
+  max-width: 1000px;
+  overflow: clip;
+}
+
+.swiper-in {
+  background-color: gainsboro;
+  width: 250px;
+  height: 250px;
+  padding: 50px;
+  border-radius: 20px;
+  font-size: 9px;
+}
+
+.news {
+  background-color: #ffffff;
+  border: 2px solid cadetblue;
+  border-radius: 30px;
+  margin: 10px;
+  text-align: center;
+  max-width:50px;
+  max-height:200px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  margin: 0;
 }
