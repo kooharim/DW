@@ -13,6 +13,18 @@ body {
   /* background-size: cover; */
 }
 
+.container-fluid {
+  margin: 0;
+  margin-top: 0;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: transparent;
+  
+}
 .navbar-brand {
   font-weight: 700px;
 }
@@ -128,25 +140,29 @@ img.main-font {
 .guide-in > p span {
   display: flex;
 }
-
+/* 공지사항 시작 */
 .announcement {
   display: flex;
   margin: 100px;
-
+  bottom: 50px;
 }
-
+.banner-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
 .banner {
-  background-color:#ffffff;
-  font-size:10px ;
+  background-color: #ffffff;
+  font-size: 10px;
   font-weight: 600px;
   font-size: 20px;
   width: 900px;
   height: 300;
   padding-left: 100px;
   padding-top: 100px;
-  
+  margin-bottom: 150px;
 }
-.left-banner h3{
+.left-banner h3 {
   font-weight: 900px;
 }
 .swiper {
@@ -157,7 +173,7 @@ img.main-font {
 .swiper-in {
   background-color: gainsboro;
   width: 250px;
-  height: 250px;
+  height: 300px;
   padding: 50px;
   border-radius: 20px;
   font-size: 9px;
@@ -169,11 +185,32 @@ img.main-font {
   border-radius: 30px;
   margin: 10px;
   text-align: center;
-  max-width:50px;
-  max-height:200px;
+  max-width: 50px;
+  max-height: 200px;
+}
+/* 체험안내/ 영산관 안내 */
+.area-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+}
+
+.banner-wrap {
+  background-color: teal;
+  width: 1000px;
+  height: 200px;
+  position: absolute;
+  z-index: auto;
+  display: flex;
+  padding: 50px;
+  border-radius: 30px;
+  color: #ffffff;
 }
 
 .swiper-wrapper {
   display: flex;
   margin: 0;
 }
+/* footer  시작*/
