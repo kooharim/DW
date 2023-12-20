@@ -23,13 +23,12 @@ body {
   right: 0;
   z-index: 1;
   background-color: transparent;
-  
 }
 .navbar-brand {
   font-weight: 700px;
 }
 .main-img {
-  border-radius: 0 0 70px 0;
+  border-radius: 0 0 80px 0;
 }
 img.main-font {
   position: absolute;
@@ -141,6 +140,9 @@ img.main-font {
   display: flex;
 }
 /* 공지사항 시작 */
+.banner-area {
+  top: 50px;
+}
 .announcement {
   display: flex;
   margin: 100px;
@@ -174,9 +176,13 @@ img.main-font {
   background-color: gainsboro;
   width: 250px;
   height: 300px;
-  padding: 50px;
+  padding: 30px;
   border-radius: 20px;
   font-size: 9px;
+}
+.swiper-wrapper {
+  display: flex;
+  margin: 0;
 }
 
 .news {
@@ -188,29 +194,29 @@ img.main-font {
   max-width: 50px;
   max-height: 200px;
 }
-/* 체험안내/ 영산관 안내 */
-.area-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 10px;
-}
 
-.banner-wrap {
-  background-color: teal;
-  width: 1000px;
-  height: 200px;
-  position: absolute;
-  z-index: auto;
+/* 체험안내/ 영산관 안내 */
+
+.banners {
   display: flex;
-  padding: 50px;
-  border-radius: 30px;
+  border-radius: 60px;
+  background-color: teal;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+  
+}
+.banner-in {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  height: 200px;
+border-right: 2px solid lime;
+
   color: #ffffff;
 }
 
-.swiper-wrapper {
-  display: flex;
-  margin: 0;
-}
 /* footer  시작*/
