@@ -8,7 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../독도페이지/css/독도페이지.css" />
+    <link rel="stylesheet" href="../독도페이지/css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
@@ -214,30 +214,25 @@
           <div class="guide">
             <ul class="guide-in">
               <li>
-                <strong
-                  >관람시간
-                  <p>
-                    화요일-토요일 9:00 ~ 17:00
+                <strong>관람시간- </strong>
+                <p>
+                  화요일-토요일 9:00 ~ 17:00
+                  <br />
+                  (점심시간 12:00~13:00, 입장마감 16:30)
+                  <span style="color: grey"
+                    >※ 관람시간은 학교 사정에 따라 변경될 수 있습니다.
                     <br />
-                    (점심시간 12:00~13:00, 입장마감 16:30)
-                    <span style="color: grey"
-                      >※ 관람시간은 학교 사정에 따라 변경될 수 있습니다.
-                      <br />
-                    </span>
-                  </p>
-                </strong>
+                  </span>
+                </p>
               </li>
               <li>
-                <strong
-                  >휴관안내
-                  <p>일요일, 월요일 및 공휴일</p>
-                </strong>
+                <strong>휴관안내 - </strong>
+
+                <p>일요일, 월요일 및 공휴일</p>
               </li>
               <li>
-                <strong
-                  >위 치
-                  <p>세종특별자치시 새롬서로 68 새롬고등학교 1층</p>
-                </strong>
+                <strong> 위 치 - </strong>
+                <p>세종특별자치시 새롬서로 68 새롬고등학교 1층</p>
               </li>
             </ul>
           </div>
@@ -256,8 +251,13 @@
 
             앞으로도 지속적으로 활용되기를 바랍니다.
           </p>
-          <button class="banner-btn"><</button>
-          <button class="banner-btn">></button>
+          <!-- swiper버튼 시작  -->
+          <div class="gongji-btn">
+            <button class="before" title="이전이미지">←before</button>
+            <button class="next" title="다음이미지">next→</button>
+          </div>
+
+          <!-- swiper 버튼 끝 -->
           <div
             class="swiper-button-next swiper-button-disabled"
             tabindex="0"
@@ -365,7 +365,7 @@
       </div>
     </article>
 
-    <!-- 공지사항 시작 -->
+    <!-- 공지사항 끝 -->
 
     <!-- 메인 끝 -->
     <!-- 체험존/ 영상관 안내 시작 -->
@@ -435,6 +435,8 @@
         spaceBetween: 30,
         centeredSlides: true,
       });
+
+      // 공지사항 버튼 시작
     </script>
   </body>
 </html>
