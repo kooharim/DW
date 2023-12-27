@@ -12,10 +12,16 @@ body {
   height: 100%;
   /* background-size: cover; */
 }
+.d-block .w-100 .main-img {
+  height: 100%;
+}
+
 .nav-link {
   color: #ffffff;
 }
-
+.navbar-brand {
+  color: #ffffff;
+}
 .container-fluid {
   margin: 0;
   margin-top: 0;
@@ -92,7 +98,7 @@ img.main-font {
 .baro-guide {
   display: flex;
   justify-content: space-evenly;
-  padding: 100px;
+  padding: 50px;
   gap: 30px;
 }
 
@@ -258,4 +264,23 @@ img.main-font {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.dokdo-bg-img {
+  max-width: 100%;
+}
+.footer-in {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+  list-style: none;
+}
+.footer-in a {
+  color: #ffffff;
+  list-style: none;
 }

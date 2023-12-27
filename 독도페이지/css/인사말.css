@@ -5,6 +5,13 @@ html {
   width: 100%;
   height: 100%;
 }
+
+.nav-link {
+  color: #ffffff;
+}
+.navbar-brand {
+  color: #ffffff;
+}
 .container-fluid {
   margin: 0;
   margin-top: 0;
@@ -22,8 +29,30 @@ html {
   height: 100%;
   border-radius: 0 0 110px 0;
 }
-
-.small-menu {
+.header-backgrund .header-in {
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-image: url("../img/img_visual01.jpg");
+  width: 100%;
+  height: 500px;
+  color: #ffffff;
+}
+.small-menu-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.small-menu-in {
   background-color: teal;
   height: 100px;
   width: 70%;
@@ -31,12 +60,22 @@ html {
   align-items: center;
   justify-content: space-around;
   padding-right: 40%;
-  position: relative;
   border-radius: 45px 0 45px 0;
+  position: absolute;
+  bottom: -50px;
 }
+
 .small-menu img {
   border-radius: 30px;
   position: absolute;
   right: 0;
   bottom: 0;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin-left: 75px;
 }
