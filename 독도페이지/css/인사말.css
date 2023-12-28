@@ -5,7 +5,9 @@ html {
   width: 100%;
   height: 100%;
 }
-
+.containers {
+  width: 100%;
+}
 .nav-link {
   color: #ffffff;
 }
@@ -78,4 +80,68 @@ html {
   left: 0;
   top: 0;
   margin-left: 75px;
+}
+/* main 시작 */
+.left,
+.right {
+  /* display: block; */
+  left: 0;
+  right: 0;
+}
+section .container {
+  position: relative;
+}
+#content {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+div[class^="area-"] strong {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 30px;
+  display: block;
+  line-height: 1.4;
+}
+
+.area-about > div:first-child .txt {
+  margin-right: auto;
+}
+
+.tx-point {
+  color: #099789;
+}
+i {
+  font-style: normal;
+}
+
+.area-about .txt p {
+  text-align: unset;
+}
+.area-about > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.area-about > div:last-child .txt {
+  margin-left: auto;
+}
+img {
+  border-radius: 0 0 200px 0;
+}
+.area-about > div:first-child .img {
+  width: 50%;
+}
+.area-about > div > div {
+  width: 50%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.left {
+}
+
+.right {
+  margin-top: 150px;
 }
