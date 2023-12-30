@@ -13,11 +13,22 @@ body {
   /* background-size: cover; */
 }
 
+.container-fluid {
+  margin: 0;
+  margin-top: 0;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: transparent;
+}
 .navbar-brand {
   font-weight: 700px;
 }
 .main-img {
-  border-radius: 0 0 70px 0;
+  border-radius: 0 0 80px 0;
 }
 img.main-font {
   position: absolute;
@@ -135,12 +146,23 @@ img.main-font {
   display: flex;
   padding-top: 10px;
 }
-
+/* 공지사항 시작 */
+.banner-area {
+  top: 50px;
+}
 .announcement {
   display: flex;
   margin: 100px;
+<<<<<<< HEAD
+=======
+  bottom: 50px;
 }
-
+.banner-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+>>>>>>> a0d9dd3fe4430ea067337475806c907883bfeffb
+}
 .banner {
   background-color: #ffffff;
   font-size: 10px;
@@ -150,6 +172,10 @@ img.main-font {
   height: 300;
   padding-left: 100px;
   padding-top: 100px;
+<<<<<<< HEAD
+=======
+  margin-bottom: 150px;
+>>>>>>> a0d9dd3fe4430ea067337475806c907883bfeffb
 }
 .left-banner h3 {
   font-weight: 900px;
@@ -162,10 +188,14 @@ img.main-font {
 .swiper-in {
   background-color: gainsboro;
   width: 250px;
-  height: 250px;
-  padding: 50px;
+  height: 300px;
+  padding: 30px;
   border-radius: 20px;
   font-size: 9px;
+}
+.swiper-wrapper {
+  display: flex;
+  margin: 0;
 }
 
 .news {
@@ -178,7 +208,56 @@ img.main-font {
   max-height: 200px;
 }
 
-.swiper-wrapper {
+/* 체험안내/ 영산관 안내 */
+.banner-area {
+  position: relative;
   display: flex;
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.banners {
+  display: flex;
+  border-radius: 60px;
+  background-color: teal;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+  position: absolute;
+  z-index: 1;
+  top: -100px;
+}
+.banner-in {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  height: 200px;
+  border-right: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 40px;
+}
+
+.banner-in2 {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  height: 200px;
+  color: #ffffff;
+}
+
+/* footer  시작*/
+.dokdo-img {
+  position: absolute;
+  z-index: 1;
+  width: 150px;
+  height: 200px;
+}
+.dokdo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
