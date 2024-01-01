@@ -47,7 +47,7 @@ nav:first-child {
 
 /* main */
 
-.main-film {
+.hero {
   position: relative;
 }
 
@@ -55,10 +55,11 @@ nav:first-child {
   width: 100%;
 }
 
-.film-in {
+.hero-in {
   position: absolute;
   bottom: 350px;
   left: 40px;
+  
 }
 .in {
   color: yellow;
@@ -74,13 +75,16 @@ nav:first-child {
   font-style: normal;
 }
 
-.film-in-img {
+.hero-in-btn {
+  width: 200px;
+  height: 50px;
   background-color: white;
   border-radius: 20px;
   display: flex;
  justify-content: center;
  align-items: center;
  gap: 20px;
+ cursor: pointer;
 }
 /* 캐러셀 시작 */
 
