@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: black;
+  justify-content: space-between;
+  width: 100%;
+  /* position: fixed; */
+  /* background-color: transparent; */
+}
+nav a {
+  text-decoration: none;
+  margin: 10px;
+  font: size 20px;
+  color: white;
+}
+.menu {
+  margin: 0;
+}
+.logo-img {
+  margin: 0;
+}
+.login {
+  margin: 0;
+}
+
+nav:first-child {
+  display: flex;
+}
+
+#horizontal-underline {
+  position: absolute;
+  left: 0;
+  height: 6px;
+  width: 0;
+  top: 0;
+  border-radius: 3px;
+  transition: 0.5s;
+  background-color: #7300e9;
+}
+
+/* main */
+
+.main-film {
+  position: relative;
+}
+
+.bg {
+  width: 100%;
+}
+
+.film-in {
+  position: absolute;
+  bottom: 350px;
+  left: 40px;
+}
+.in {
+  color: yellow;
+  font-size: 150px;
+  font-weight: 900px;
+  font-family: 'FUNFLOWSURVIVORKR';
+ 
+}
+@font-face {
+  font-family: 'FUNFLOWSURVIVORKR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/FUNFLOWSURVIVORKR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.film-in-img {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+/* 캐러셀 시작 */
+
+.carousel-inner {
+  display: flex;
+}
