@@ -6,45 +6,51 @@ html {
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: black;
+}
+.nav-Bar {
+  position: relative;
+}
+.menu {
+  align-self: center;
+}
+.login {
+  align-self: center;
+  flex-grow: 1;
+  text-align: right;
+}
 
 nav {
+  display: flex;
+  /* justify-content: space-between; */
   background-color: black;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 100%;
   /* position: fixed; */
   /* background-color: transparent; */
 }
 nav a {
   text-decoration: none;
-  margin: 10px;
-  font: size 20px;
   color: white;
 }
-.menu {
-  margin: 0;
-}
-.logo-img {
-  margin: 0;
-}
-.login {
-  margin: 0;
-}
-
-nav:first-child {
-  display: flex;
+.nav-Bar a {
+  font-size: 20px;
 }
 
 #horizontal-underline {
   position: absolute;
   left: 0;
-  height: 6px;
+  height: 3px;
   width: 0;
-  top: 0;
+  top: 0px;
   border-radius: 3px;
   transition: 0.5s;
   background-color: #7300e9;
 }
-
+.aa1 {
+  margin: 10px;
+}
 /* main */
 
 .hero {
@@ -59,18 +65,17 @@ nav:first-child {
   position: absolute;
   bottom: 350px;
   left: 40px;
-  
 }
 .in {
   color: yellow;
   font-size: 150px;
   font-weight: 900px;
-  font-family: 'FUNFLOWSURVIVORKR';
- 
+  font-family: "FUNFLOWSURVIVORKR";
 }
 @font-face {
-  font-family: 'FUNFLOWSURVIVORKR';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/FUNFLOWSURVIVORKR.woff2') format('woff2');
+  font-family: "FUNFLOWSURVIVORKR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/FUNFLOWSURVIVORKR.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -79,15 +84,116 @@ nav:first-child {
   width: 200px;
   height: 50px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
- justify-content: center;
- align-items: center;
- gap: 20px;
- cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
 }
 /* 캐러셀 시작 */
+.carousel_main {
+  width: 2000px; /* 이미지 크기 설정  */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  user-select: none;
+}
 
-.carousel-inner {
+.carousel_wrapper {
   display: flex;
+  transition: transform 1s;
+}
+
+.carousel_slide {
+  flex: 0 0 300px; /* 이미지 크기 설정  */
+  position: relative;
+}
+
+.carousel_slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 캐러셀 사이드 버튼 */
+.carousel_button_container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carousel_button {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.carousel_prev {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carousel_next {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* 캐러셀 중앙 버튼 */
+.carousel_pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel_circle {
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel_circle.active {
+  background-color: #333;
+}
+/* 캐러셀 끝 */
+
+/* 카드 시작 */
+.films {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.film-titlt {
+  border: 3px solid #ffffff;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 10px;
+  color: #ffffff;
+}
+/* card */
+.carouselSlide {
+  width: 100%;
 }
