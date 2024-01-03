@@ -180,20 +180,20 @@ nav a {
 }
 /* 캐러셀 끝 */
 
-/* 카드 시작 */
-.films {
+.carousel_wrapper{
+  width: 300px;
+  height: 400px;
+}
+/* 영화 추천 */
+.films{
+  background-color:#B883E5;
+  width: 400px;
+  height: 400px;
+}
+.film-span{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.film-titlt {
-  border: 3px solid #ffffff;
-  font-size: 40px;
-  font-weight: 600;
-  padding: 10px;
-  color: #ffffff;
-}
-/* card */
-.carouselSlide {
-  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
 }
