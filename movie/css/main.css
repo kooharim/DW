@@ -122,13 +122,15 @@ nav a {
   display: block;
   width: 100%;
   height: 100%;
+}
+.carousel_slide {
   object-fit: cover;
   transform: scale(1);
   transform: scale(1);
   transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-.carousel_slide img:hover {
+.carousel_slide:hover {
   transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -191,7 +193,7 @@ nav a {
   cursor: pointer;
 }
 
-.carousel_circle.active {
+.carousel_circle.active1 {
   background-color: #333;
 }
 /* 캐러셀 끝 */
@@ -227,7 +229,7 @@ nav a {
 .carousel2_wrapper {
   display: flex;
   transition: transform 1s;
-  gap: 20px;
+  gap: 50px;
 }
 
 .carousel2_slide {
@@ -239,13 +241,17 @@ nav a {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.carousel2_slide {
   object-fit: cover;
   transform: scale(1);
   transform: scale(1);
   transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-.carousel2_slide img:hover {
+
+.carousel2_slide:hover {
   transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -311,4 +317,5 @@ nav a {
 .carousel2_circle.active {
   background-color: #333;
 }
-/* 캐러셀 끝 */
+/* 캐러셀2 끝 */
+

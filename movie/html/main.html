@@ -34,7 +34,7 @@
           <a href="#" class="aa1">드라마( TV series)</a>
           <a href="#" class="aa1">영화(film)</a>
           <a href="#" class="aa1">예능 (unscripted shows)</a>
-          <a href="#" class="aa1">만화</a>
+          <a href="../html/만화.html" class="aa1">만화</a>
         </div>
         <div class="login">
           <a href="../html/프로필.html">프로필 °</a>
@@ -333,7 +333,51 @@
       )
     );
 
-    // 캐러셀 2 js
+    // 캐러셀 1 js
+    const swiper1 = document.querySelector(".carousel_wrapper");
+    const prevButtons1 = document.querySelectorAll(".carousel_prev");
+    const nextButtons1 = document.querySelectorAll(".carousel_next");
+    const bullets1 = document.querySelectorAll(".carousel_circle");
+
+    let currentSlide1 = 0;
+
+    function showSlide1(slideIndex1) {
+      swiper1.style.transform = `translateX(-${slideIndex1 * 300}px)`;
+      currentSlide1 = slideIndex1;
+
+      bullets1.forEach((bullet1, index1) => {
+        if (index1 === currentSlide1) {
+          bullet1.classList.add("active1");
+        } else {
+          bullet1.classList.remove("active1");
+        }
+      });
+    }
+
+    prevButtons1.forEach((prevButton1) => {
+      prevButton1.addEventListener("click", () => {
+        if (currentSlide1 > 0) {
+          showSlide1(currentSlide1 - 1);
+        }
+      });
+    });
+
+    nextButtons1.forEach((nextButton1) => {
+      nextButton1.addEventListener("click", () => {
+        if (currentSlide1 < 7) {
+          showSlide1(currentSlide1 + 1);
+        }
+      });
+    });
+
+    bullets1.forEach((bullet1, index1) => {
+      bullet1.addEventListener("click", () => {
+        showSlide1(index1);
+      });
+    });
+    showSlide1(0);
+
+    //  캐러셀 2 js
     const swiper = document.querySelector(".carousel2_wrapper");
     const prevButtons = document.querySelectorAll(".carousel2_prev");
     const nextButtons = document.querySelectorAll(".carousel2_next");
@@ -364,7 +408,7 @@
 
     nextButtons.forEach((nextButton) => {
       nextButton.addEventListener("click", () => {
-        if (currentSlide < 8) {
+        if (currentSlide < 9) {
           showSlide(currentSlide + 1);
         }
       });
