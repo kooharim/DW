@@ -100,7 +100,7 @@ nav a {
   margin-top: 20px;
 }
 .carousel_main {
-  width: 1900px; /* 이미지 크기 설정  */
+  width: 1500px; /* 이미지 크기 설정  */
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -319,3 +319,343 @@ nav a {
 }
 /* 캐러셀2 끝 */
 
+/* 캐러셀 3 시작 */
+
+.film3 {
+  display: flex;
+}
+.carousel3_main {
+  width: 1500px; /* 이미지 크기 설정  */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.carousel3_wrapper {
+  display: flex;
+  transition: transform 1s;
+  gap: 20px;
+}
+
+.carousel3_slide {
+  flex: 0 0 400px; /* 이미지 크기 설정  */
+  position: relative;
+}
+
+.carousel3_slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.carousel3_slide {
+  object-fit: cover;
+  transform: scale(1);
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.carousel3_slide:hover {
+  transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* 캐러셀 사이드 버튼 */
+.carousel3_button_container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carousel3_button {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.carousel3_prev {
+  background-color: rgba(147, 11, 159, 0.5);
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carousel3_next {
+  background-color: rgba(147, 11, 159, 0.5);
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* 캐러셀 중앙 버튼 */
+.carousel3_pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel3_circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel3_circle.active3 {
+  background-color: #333;
+}
+/* 캐러셀 3 끝 */
+
+/* 캐러셀 4 시작 */
+
+.film4 {
+  display: flex;
+}
+
+.carousel4_main {
+  width: 1500px; /* 이미지 크기 설정  */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.carousel4_wrapper {
+  display: flex;
+  transition: transform 1s;
+  gap: 20px;
+}
+
+.carousel4_slide {
+  flex: 0 0 400px; /* 이미지 크기 설정  */
+  position: relative;
+}
+
+.carousel4_slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.carousel4_slide {
+  object-fit: cover;
+  transform: scale(1);
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.carousel4_slide:hover {
+  transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* 캐러셀 사이드 버튼 */
+.carousel4_button_container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carousel4_button {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.carousel4_prev {
+  background-color: rgba(147, 11, 159, 0.5);
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carousel4_next {
+  background-color: rgba(147, 11, 159, 0.5);
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* 캐러셀 중앙 버튼 */
+.carousel4_pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel4_circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel4_circle.active4 {
+  background-color: #333;
+}
+/* 캐러셀 4 끝 */
+
+/* 캐러셀 5 시작 */
+
+.film5 {
+  display: flex;
+}
+
+.carousel5_main {
+  width: 1500px; /* 이미지 크기 설정  */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.carousel5_wrapper {
+  display: flex;
+  transition: transform 1s;
+  gap: 20px;
+}
+
+.carousel5_slide {
+  flex: 0 0 400px; /* 이미지 크기 설정  */
+  position: relative;
+}
+
+.carousel5_slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.carousel5_slide {
+  object-fit: cover;
+  transform: scale(1);
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.carousel5_slide:hover {
+  transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* 캐러셀 사이드 버튼 */
+.carousel5_button_container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carousel5_button {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.carousel5_prev {
+  background-color: rgba(147, 11, 159, 0.5);
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carousel5_next {
+  background-color: rgba(147, 11, 159, 0.5);
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* 캐러셀 중앙 버튼 */
+.carousel5_pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel5_circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel4_circle.active4 {
+  background-color: #333;
+}
+/* 캐러셀 5 끝 */
+
+/* footer */
+
+.icons {
+  position: relative;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 100px;
+  left: 490px;
+}
+.texts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 200px;
+  font-size: x-small;
+}
