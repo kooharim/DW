@@ -100,7 +100,7 @@ nav a {
   margin-top: 20px;
 }
 .carousel_main {
-  width: 1500px; /* 이미지 크기 설정  */
+  width: 1800px; /* 이미지 크기 설정  */
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -219,7 +219,7 @@ nav a {
 }
 /* 2번째 캐러셀 */
 .carousel2_main {
-  width: 1500px; /* 이미지 크기 설정  */
+  width: 1800px; /* 이미지 크기 설정  */
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -325,7 +325,7 @@ nav a {
   display: flex;
 }
 .carousel3_main {
-  width: 1500px; /* 이미지 크기 설정  */
+  width: 1800px; /* 이미지 크기 설정  */
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -430,7 +430,7 @@ nav a {
 }
 
 .carousel4_main {
-  width: 1500px; /* 이미지 크기 설정  */
+  width: 1800px; /* 이미지 크기 설정  */
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -535,7 +535,7 @@ nav a {
 }
 
 .carousel5_main {
-  width: 1500px; /* 이미지 크기 설정  */
+  width: 1800px; /* 이미지 크기 설정  */
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -628,7 +628,7 @@ nav a {
   cursor: pointer;
 }
 
-.carousel4_circle.active4 {
+.carousel5_circle.active5 {
   background-color: #333;
 }
 /* 캐러셀 5 끝 */
@@ -645,7 +645,7 @@ nav a {
   gap: 10px;
   position: absolute;
   top: 100px;
-  left: 490px;
+  left: 680px;
 }
 .texts {
   display: flex;
