@@ -63,19 +63,20 @@ nav a {
 
 .hero-in {
   position: absolute;
-  bottom: 350px;
+  bottom: 100px;
   left: 40px;
 }
 .in {
-  font-size: 150px;
-  font-weight: 900px;
-  font-family: "UhBeeMinidori";
+  color: aliceblue;
+  font-size: 100px;
+  font-weight: 300px;
+  font-family: "InkLipquid";
   user-select: none;
 }
 
 @font-face {
-  font-family: "UhBeeMinidori";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeMinidori.woff")
+  font-family: "InkLipquid";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
@@ -92,3 +93,5 @@ nav a {
   gap: 20px;
   cursor: pointer;
 }
+
+/* 카드 */

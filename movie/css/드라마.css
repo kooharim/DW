@@ -9,6 +9,10 @@ html {
 body {
   background-color: black;
 }
+/* main{
+  background-color: black;
+} */
+
 .nav-Bar {
   position: relative;
 }
@@ -63,7 +67,7 @@ nav a {
 
 .hero-in {
   position: absolute;
-  bottom: 350px;
+  bottom: 120px;
   left: 40px;
 }
 .in {
@@ -91,4 +95,29 @@ nav a {
   align-items: center;
   gap: 20px;
   cursor: pointer;
+}
+
+/* 카드 */
+
+.cards .box-img {
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  background: gainsboro;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10px;
+  position: relative;
+}
+.cards .box-img .fills {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.translateX:hover .fills {
+  transform: translateX(-100%);
 }
